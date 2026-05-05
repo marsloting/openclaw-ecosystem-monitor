@@ -7,6 +7,13 @@ const day = now.toISOString().slice(0, 10);
 const dataDir = path.join(root, "data", day);
 const reportsDir = path.join(root, "reports");
 const latestStatePath = path.join(root, "data", "latest.json");
+const hedgePackages = [
+  "ai",
+  "@ai-sdk/openai",
+  "openai",
+  "@anthropic-ai/sdk",
+  "@modelcontextprotocol/sdk"
+];
 
 async function fetchJson(url, options = {}) {
   const response = await fetch(url, {
@@ -91,6 +98,45 @@ function compactNpmDownloads(payload) {
   };
 }
 
+function compactNpmPackage(metadataPayload, downloadsPayload) {
+  const metadata = metadataPayload?.body || {};
+  const latestVersion = metadata["dist-tags"]?.latest;
+  const latestVersionInfo = latestVersion ? metadata.versions?.[latestVersion] : null;
+  return {
+    name: metadata.name,
+    latestVersion,
+    latestPublishedAt: latestVersion ? metadata.time?.[latestVersion] : null,
+    description: metadata.description,
+    license: metadata.license || latestVersionInfo?.license,
+    homepage: metadata.homepage,
+    repository: typeof metadata.repository === "string" ? metadata.repository : metadata.repository?.url,
+    npm: `https://www.npmjs.com/package/${encodeURIComponent(metadata.name || "")}`,
+    weeklyDownloads: downloadsPayload?.body?.downloads ?? null,
+    downloadsWindow: downloadsPayload?.body?.start && downloadsPayload?.body?.end
+      ? `${downloadsPayload.body.start} to ${downloadsPayload.body.end}`
+      : null,
+    status: {
+      metadata: metadataPayload?.status,
+      downloads: downloadsPayload?.status,
+      ok: Boolean(metadataPayload?.ok && downloadsPayload?.ok)
+    }
+  };
+}
+
+function compactHedgePackages(results) {
+  return {
+    checkedAt: now.toISOString(),
+    data: results.map(({ metadata, downloads }) => compactNpmPackage(metadata, downloads))
+  };
+}
+
+function daysSince(value) {
+  if (!value) return "n/a";
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return "n/a";
+  return Math.floor((now.getTime() - date.getTime()) / (24 * 60 * 60 * 1000));
+}
+
 function compactPullRequest(payload) {
   if (!payload?.body) return payload;
   const pr = payload.body;
@@ -138,6 +184,7 @@ function renderReport(snapshot, previousState) {
   const npmPackages = snapshot.sources.npmSearch.data;
   const pr = snapshot.sources.p1PullRequest.data;
   const issues = snapshot.sources.p1IssueCandidates.data;
+  const hedge = snapshot.sources.aiDevtoolHedge.data;
   const warnings = snapshot.warnings.length ? snapshot.warnings.map((w) => `- ${w}`).join("\n") : "- none";
 
   return `# Stage A Signal Report
@@ -192,6 +239,14 @@ Package: ${downloads?.package || "openclaw"}
 
 ${npmPackages.map((pkg) => `- ${pkg.name}@${pkg.version} (${pkg.date})`).join("\n") || "- none"}
 
+## Outside Hedge: AI/Devtool npm Packages
+
+This hedge watches package freshness and dependency-market movement outside OpenClaw. It is metadata-only and does not mirror package tarballs or READMEs.
+
+| Package | Latest | Updated | Age days | Weekly downloads | Source |
+|---|---:|---|---:|---:|---|
+${hedge.map((pkg) => `| ${pkg.name} | ${pkg.latestVersion ?? "n/a"} | ${pkg.latestPublishedAt ?? "n/a"} | ${daysSince(pkg.latestPublishedAt)} | ${pkg.weeklyDownloads ?? "n/a"} | ${pkg.npm} |`).join("\n") || "| n/a | n/a | n/a | n/a | n/a | n/a |"}
+
 ## Warnings
 
 ${warnings}
@@ -222,6 +277,17 @@ const [repoRaw, npmSearchRaw, npmDownloadsRaw, prRaw, issueSearchRaw] = await Pr
   fetchJson(`https://api.github.com/search/issues?q=${docsIssueQuery}&per_page=10`)
 ]);
 
+const aiDevtoolHedgeRaw = await Promise.all(
+  hedgePackages.map(async (packageName) => {
+    const encoded = encodeURIComponent(packageName);
+    const [metadata, downloads] = await Promise.all([
+      fetchJson(`https://registry.npmjs.org/${encoded}`),
+      fetchJson(`https://api.npmjs.org/downloads/point/last-week/${encoded}`)
+    ]);
+    return { packageName, metadata, downloads };
+  })
+);
+
 const snapshot = {
   generatedAt: now.toISOString(),
   policy: {
@@ -234,13 +300,20 @@ const snapshot = {
     npmSearch: compactNpmSearch(npmSearchRaw),
     npmDownloads: compactNpmDownloads(npmDownloadsRaw),
     p1PullRequest: compactPullRequest(prRaw),
-    p1IssueCandidates: compactIssueSearch(issueSearchRaw)
+    p1IssueCandidates: compactIssueSearch(issueSearchRaw),
+    aiDevtoolHedge: compactHedgePackages(aiDevtoolHedgeRaw)
   },
   warnings: []
 };
 
 for (const [name, source] of Object.entries(snapshot.sources)) {
-  if (!source.ok) {
+  if (name === "aiDevtoolHedge") {
+    for (const pkg of source.data) {
+      if (!pkg.status.ok) {
+        snapshot.warnings.push(`${name}:${pkg.name} metadata=${pkg.status.metadata} downloads=${pkg.status.downloads}`);
+      }
+    }
+  } else if (!source.ok) {
     snapshot.warnings.push(`${name} returned HTTP ${source.status}`);
   }
 }

@@ -9,9 +9,13 @@ sources:
     collection: package_metadata_and_download_counts_only
     redistribution: no_tarball_or_bulk_registry_mirroring
     stage_a_action: freshness_signal_only
+  npm_ai_devtool_hedge:
+    official_url: https://github.com/npm/registry/blob/main/docs/REGISTRY-API.md
+    collection: package_metadata_versions_timestamps_download_counts_only
+    redistribution: no_tarball_readme_or_bulk_registry_mirroring
+    stage_a_action: outside_openclaw_hedge_signal_only
   openclaw_docs:
     official_url: https://docs.openclaw.ai/tools/clawhub
     collection: canonical_links_and_policy_summary_only
     redistribution: no_full_doc_mirroring
     stage_a_action: policy_gate_only
-
