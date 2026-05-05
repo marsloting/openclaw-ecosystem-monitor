@@ -1,22 +1,22 @@
 # Stage A Signal Report
 
-Generated: 2026-05-05T17:09:50.065Z
+Generated: 2026-05-05T19:53:15.378Z
 
 ## Runtime
 
 - GitHub Actions: best-effort cron + manual dispatch
 - Public mutation: disabled
 - Secrets: none required
-- Previous scan: 2026-05-05T10:59:21.661Z
+- Previous scan: 2026-05-05T17:09:50.065Z
 
 ## OpenClaw Repo Signal
 
 | Metric | Value |
 |---|---:|
-| Stars | 368577 |
-| Forks | 75937 |
-| Open issues | 6991 |
-| Subscribers | 1803 |
+| Stars | 368608 |
+| Forks | 75950 |
+| Open issues | 7041 |
+| Subscribers | 1804 |
 
 Source: https://github.com/openclaw/openclaw
 
@@ -36,6 +36,9 @@ Tracked PR: https://github.com/openclaw/openclaw/pull/77710
 
 Candidate issue scan is metadata-only and for Codex review before any public action.
 
+- #78000 v2026.5.4: model allowlist breaks existing cron jobs using claude-haiku-4-5; claude-haiku-4-7 also unrecognised by Anthropic API (2026-05-05T18:23:01Z) https://github.com/openclaw/openclaw/issues/78000
+- #7648 Feature Request: Option to disable auto-scroll in Control UI / WebChat (2026-05-05T18:14:23Z) https://github.com/openclaw/openclaw/issues/7648
+- #7669 [Feature] Re-enable dev channel distribution tag for npm releases (2026-05-05T17:27:18Z) https://github.com/openclaw/openclaw/issues/7669
 - #69541 [RFC] Declarative registry for plugin-injected context XML tags (strip/sanitize/ingest contract) (2026-05-05T16:31:56Z) https://github.com/openclaw/openclaw/issues/69541
 - #77919 Deepgram: add native `utterances` support alongside `smartFormat` (2026-05-05T16:06:30Z) https://github.com/openclaw/openclaw/issues/77919
 - #7717 Feature Request: Discord role-mention triggers (2026-05-05T16:05:11Z) https://github.com/openclaw/openclaw/issues/7717
@@ -43,9 +46,6 @@ Candidate issue scan is metadata-only and for Codex review before any public act
 - #7433 Improve WhatsApp/Baileys group message reliability (2026-05-05T15:32:26Z) https://github.com/openclaw/openclaw/issues/7433
 - #6966 Dynamic Model Switching Based on API Rate Limits (2026-05-05T14:25:33Z) https://github.com/openclaw/openclaw/issues/6966
 - #77872 pdf tool fails with openai-codex/gpt-5.5: "Instructions are required" (2026-05-05T14:11:46Z) https://github.com/openclaw/openclaw/issues/77872
-- #6731 [Feature]: safe/unsafe ClawdBot (2026-05-05T13:43:27Z) https://github.com/openclaw/openclaw/issues/6731
-- #7524 Feature: groupScope option to consolidate group sessions into main (2026-05-05T11:23:31Z) https://github.com/openclaw/openclaw/issues/7524
-- #76952 Docs/Feature Request: Explain Realtime Talk voices, voice-agent role, and mobile/phone bridge options (2026-05-05T11:17:45Z) https://github.com/openclaw/openclaw/issues/76952
 
 ## npm Signal
 
@@ -66,7 +66,7 @@ Package: openclaw
 - @tloncorp/tlon-skill@0.3.5 (2026-04-10T17:06:43.292Z)
 - @lark-apaas/openclaw-extension-miaoda@1.0.15 (2026-04-27T15:13:23.424Z)
 - openclaw-stepfun@0.2.24 (2026-04-30T08:49:45.696Z)
-- @lark-apaas/openclaw-scripts-diagnose-cli@0.1.4 (2026-04-29T09:19:25.160Z)
+- @wecom/wecom-openclaw-cli@1.0.25 (2026-04-11T03:04:20.356Z)
 
 ## Outside Hedge: AI/Devtool npm Packages
 
@@ -74,9 +74,9 @@ This hedge watches package freshness and dependency-market movement outside Open
 
 | Package | Latest | Updated | Age days | Weekly downloads | Source |
 |---|---:|---|---:|---:|---|
-| ai | 6.0.175 | 2026-05-04T17:24:36.726Z | 0 | 11949802 | https://www.npmjs.com/package/ai |
-| @ai-sdk/openai | 3.0.60 | 2026-05-04T20:53:05.597Z | 0 | 5799994 | https://www.npmjs.com/package/%40ai-sdk%2Fopenai |
-| openai | 6.36.0 | 2026-05-04T17:36:28.121Z | 0 | 20670114 | https://www.npmjs.com/package/openai |
+| ai | 6.0.175 | 2026-05-04T17:24:36.726Z | 1 | 11949802 | https://www.npmjs.com/package/ai |
+| @ai-sdk/openai | 3.0.61 | 2026-05-05T18:14:16.342Z | 0 | 5799994 | https://www.npmjs.com/package/%40ai-sdk%2Fopenai |
+| openai | 6.36.0 | 2026-05-04T17:36:28.121Z | 1 | 20670114 | https://www.npmjs.com/package/openai |
 | @anthropic-ai/sdk | 0.94.0 | 2026-05-05T16:04:04.967Z | 0 | 18111939 | https://www.npmjs.com/package/%40anthropic-ai%2Fsdk |
 | @modelcontextprotocol/sdk | 1.29.0 | 2026-03-30T16:50:42.718Z | 36 | 33359614 | https://www.npmjs.com/package/%40modelcontextprotocol%2Fsdk |
 
