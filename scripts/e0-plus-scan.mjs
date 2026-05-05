@@ -91,10 +91,53 @@ function compactNpmDownloads(payload) {
   };
 }
 
+function compactPullRequest(payload) {
+  if (!payload?.body) return payload;
+  const pr = payload.body;
+  return {
+    url: payload.url,
+    status: payload.status,
+    ok: payload.ok,
+    checkedAt: payload.checkedAt,
+    data: {
+      number: pr.number,
+      title: pr.title,
+      html_url: pr.html_url,
+      state: pr.state,
+      draft: pr.draft,
+      merged: pr.merged,
+      mergeable_state: pr.mergeable_state,
+      head_sha: pr.head?.sha,
+      updated_at: pr.updated_at,
+      labels: (pr.labels || []).map((label) => label.name)
+    }
+  };
+}
+
+function compactIssueSearch(payload) {
+  const items = payload?.body?.items || [];
+  return {
+    url: payload.url,
+    status: payload.status,
+    ok: payload.ok,
+    checkedAt: payload.checkedAt,
+    data: items.slice(0, 10).map((issue) => ({
+      number: issue.number,
+      title: issue.title,
+      html_url: issue.html_url,
+      state: issue.state,
+      updated_at: issue.updated_at,
+      labels: (issue.labels || []).map((label) => label.name)
+    }))
+  };
+}
+
 function renderReport(snapshot, previousState) {
   const repo = snapshot.sources.openclawRepo.data;
   const downloads = snapshot.sources.npmDownloads.data;
   const npmPackages = snapshot.sources.npmSearch.data;
+  const pr = snapshot.sources.p1PullRequest.data;
+  const issues = snapshot.sources.p1IssueCandidates.data;
   const warnings = snapshot.warnings.length ? snapshot.warnings.map((w) => `- ${w}`).join("\n") : "- none";
 
   return `# Stage A Signal Report
@@ -118,6 +161,24 @@ Generated: ${snapshot.generatedAt}
 | Subscribers | ${repo?.subscribers_count ?? "n/a"} |
 
 Source: ${repo?.html_url || "https://github.com/openclaw/openclaw"}
+
+## P1 Reputation Signal
+
+Tracked PR: ${pr?.html_url || "https://github.com/openclaw/openclaw/pull/77710"}
+
+| Field | Value |
+|---|---|
+| State | ${pr?.state ?? "n/a"} |
+| Draft | ${String(pr?.draft ?? "n/a")} |
+| Merged | ${String(pr?.merged ?? "n/a")} |
+| Mergeable state | ${pr?.mergeable_state ?? "n/a"} |
+| Head SHA | ${pr?.head_sha ?? "n/a"} |
+| Updated | ${pr?.updated_at ?? "n/a"} |
+| Labels | ${(pr?.labels || []).join(", ") || "none"} |
+
+Candidate issue scan is metadata-only and for Codex review before any public action.
+
+${issues.map((issue) => `- #${issue.number} ${issue.title} (${issue.updated_at}) ${issue.html_url}`).join("\n") || "- none"}
 
 ## npm Signal
 
@@ -149,10 +210,16 @@ await mkdir(reportsDir, { recursive: true });
 
 const previousState = await readLatestState();
 
-const [repoRaw, npmSearchRaw, npmDownloadsRaw] = await Promise.all([
+const docsIssueQuery = encodeURIComponent(
+  "repo:openclaw/openclaw is:issue is:open documentation sort:updated-desc"
+);
+
+const [repoRaw, npmSearchRaw, npmDownloadsRaw, prRaw, issueSearchRaw] = await Promise.all([
   fetchJson("https://api.github.com/repos/openclaw/openclaw"),
   fetchJson("https://registry.npmjs.org/-/v1/search?text=openclaw&size=10"),
-  fetchJson("https://api.npmjs.org/downloads/point/last-week/openclaw")
+  fetchJson("https://api.npmjs.org/downloads/point/last-week/openclaw"),
+  fetchJson("https://api.github.com/repos/openclaw/openclaw/pulls/77710"),
+  fetchJson(`https://api.github.com/search/issues?q=${docsIssueQuery}&per_page=10`)
 ]);
 
 const snapshot = {
@@ -165,7 +232,9 @@ const snapshot = {
   sources: {
     openclawRepo: compactGitHubRepo(repoRaw),
     npmSearch: compactNpmSearch(npmSearchRaw),
-    npmDownloads: compactNpmDownloads(npmDownloadsRaw)
+    npmDownloads: compactNpmDownloads(npmDownloadsRaw),
+    p1PullRequest: compactPullRequest(prRaw),
+    p1IssueCandidates: compactIssueSearch(issueSearchRaw)
   },
   warnings: []
 };
@@ -183,4 +252,3 @@ await writeFile(path.join(reportsDir, "stage-a-signal-report.md"), renderReport(
 
 console.log(`Wrote ${snapshotPath}`);
 console.log(`Wrote ${path.join(reportsDir, "stage-a-signal-report.md")}`);
-
