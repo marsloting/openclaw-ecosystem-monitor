@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-05T07:12:18.679Z",
+  "generatedAt": "2026-05-05T07:15:11.098Z",
   "policy": {
     "publicMutation": false,
     "secretsRequired": false,
@@ -10,23 +10,23 @@
       "url": "https://api.github.com/repos/openclaw/openclaw",
       "status": 200,
       "ok": true,
-      "checkedAt": "2026-05-05T07:12:18.679Z",
+      "checkedAt": "2026-05-05T07:15:11.098Z",
       "data": {
         "full_name": "openclaw/openclaw",
         "html_url": "https://github.com/openclaw/openclaw",
         "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
-        "stargazers_count": 368402,
-        "forks_count": 75881,
-        "open_issues_count": 6868,
+        "stargazers_count": 368403,
+        "forks_count": 75882,
+        "open_issues_count": 6865,
         "subscribers_count": 1804,
-        "pushed_at": "2026-05-05T07:10:05Z"
+        "pushed_at": "2026-05-05T07:14:41Z"
       }
     },
     "npmSearch": {
       "url": "https://registry.npmjs.org/-/v1/search?text=openclaw&size=10",
       "status": 200,
       "ok": true,
-      "checkedAt": "2026-05-05T07:12:18.679Z",
+      "checkedAt": "2026-05-05T07:15:11.098Z",
       "data": [
         {
           "name": "openclaw",
@@ -203,7 +203,7 @@
       "url": "https://api.npmjs.org/downloads/point/last-week/openclaw",
       "status": 200,
       "ok": true,
-      "checkedAt": "2026-05-05T07:12:18.679Z",
+      "checkedAt": "2026-05-05T07:15:11.098Z",
       "data": {
         "downloads": 1105507,
         "start": "2026-04-27",
