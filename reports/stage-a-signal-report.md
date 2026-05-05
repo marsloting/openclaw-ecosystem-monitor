@@ -1,22 +1,22 @@
 # Stage A Signal Report
 
-Generated: 2026-05-05T10:59:21.661Z
+Generated: 2026-05-05T17:09:50.065Z
 
 ## Runtime
 
 - GitHub Actions: best-effort cron + manual dispatch
 - Public mutation: disabled
 - Secrets: none required
-- Previous scan: 2026-05-05T10:58:00.760Z
+- Previous scan: 2026-05-05T10:59:21.661Z
 
 ## OpenClaw Repo Signal
 
 | Metric | Value |
 |---|---:|
-| Stars | 368470 |
-| Forks | 75900 |
-| Open issues | 6909 |
-| Subscribers | 1802 |
+| Stars | 368577 |
+| Forks | 75937 |
+| Open issues | 6991 |
+| Subscribers | 1803 |
 
 Source: https://github.com/openclaw/openclaw
 
@@ -36,16 +36,16 @@ Tracked PR: https://github.com/openclaw/openclaw/pull/77710
 
 Candidate issue scan is metadata-only and for Codex review before any public action.
 
-- #77359 [Bug]: Slash commands not registered for non-default Discord accounts in multi-bot setup (2026-05-05T09:51:27Z) https://github.com/openclaw/openclaw/issues/77359
-- #75 Linux/Windows Clawdbot Apps (2026-05-05T09:36:26Z) https://github.com/openclaw/openclaw/issues/75
-- #7575 feat: Sysbox Docker Runtime for Secure Container Isolation (Host Maintenance Required) (2026-05-05T09:10:56Z) https://github.com/openclaw/openclaw/issues/7575
-- #8147 [Feature]:   Add configurable send hotkey for WebChat (Cmd+Enter instead of Enter) (2026-05-05T08:05:19Z) https://github.com/openclaw/openclaw/issues/8147
-- #77746 Discord GroupChat replies invisible after 2026.5.3 — visibleReplies default changed (2026-05-05T07:52:57Z) https://github.com/openclaw/openclaw/issues/77746
-- #9443 Request: Prebuilt Android APK releases (2026-05-05T07:50:22Z) https://github.com/openclaw/openclaw/issues/9443
-- #77434 [Bug]: /new command in webchat creates a parallel child session instead of resetting the current session (2026-05-05T07:16:28Z) https://github.com/openclaw/openclaw/issues/77434
-- #9607 Himalaya skill: missing email formatting philosophy and incorrect command syntax (2026-05-05T04:59:53Z) https://github.com/openclaw/openclaw/issues/9607
-- #9658 Feature Request: Support streaming or file-based tool arguments to bypass JSON serialization limits (2026-05-05T03:14:56Z) https://github.com/openclaw/openclaw/issues/9658
-- #35203 [RFC] Multi-Agent Collaboration Enhancement: Capability Profiling + Shared Blackboard + Layered Memory + Token Cost Governance (2026-05-05T03:11:12Z) https://github.com/openclaw/openclaw/issues/35203
+- #69541 [RFC] Declarative registry for plugin-injected context XML tags (strip/sanitize/ingest contract) (2026-05-05T16:31:56Z) https://github.com/openclaw/openclaw/issues/69541
+- #77919 Deepgram: add native `utterances` support alongside `smartFormat` (2026-05-05T16:06:30Z) https://github.com/openclaw/openclaw/issues/77919
+- #7717 Feature Request: Discord role-mention triggers (2026-05-05T16:05:11Z) https://github.com/openclaw/openclaw/issues/7717
+- #6625 Feature: Graceful sub-agent timeout (pre-timeout warning) (2026-05-05T15:40:02Z) https://github.com/openclaw/openclaw/issues/6625
+- #7433 Improve WhatsApp/Baileys group message reliability (2026-05-05T15:32:26Z) https://github.com/openclaw/openclaw/issues/7433
+- #6966 Dynamic Model Switching Based on API Rate Limits (2026-05-05T14:25:33Z) https://github.com/openclaw/openclaw/issues/6966
+- #77872 pdf tool fails with openai-codex/gpt-5.5: "Instructions are required" (2026-05-05T14:11:46Z) https://github.com/openclaw/openclaw/issues/77872
+- #6731 [Feature]: safe/unsafe ClawdBot (2026-05-05T13:43:27Z) https://github.com/openclaw/openclaw/issues/6731
+- #7524 Feature: groupScope option to consolidate group sessions into main (2026-05-05T11:23:31Z) https://github.com/openclaw/openclaw/issues/7524
+- #76952 Docs/Feature Request: Explain Realtime Talk voices, voice-agent role, and mobile/phone bridge options (2026-05-05T11:17:45Z) https://github.com/openclaw/openclaw/issues/76952
 
 ## npm Signal
 
@@ -77,8 +77,8 @@ This hedge watches package freshness and dependency-market movement outside Open
 | ai | 6.0.175 | 2026-05-04T17:24:36.726Z | 0 | 11949802 | https://www.npmjs.com/package/ai |
 | @ai-sdk/openai | 3.0.60 | 2026-05-04T20:53:05.597Z | 0 | 5799994 | https://www.npmjs.com/package/%40ai-sdk%2Fopenai |
 | openai | 6.36.0 | 2026-05-04T17:36:28.121Z | 0 | 20670114 | https://www.npmjs.com/package/openai |
-| @anthropic-ai/sdk | 0.93.0 | 2026-05-04T17:13:41.698Z | 0 | 18111939 | https://www.npmjs.com/package/%40anthropic-ai%2Fsdk |
-| @modelcontextprotocol/sdk | 1.29.0 | 2026-03-30T16:50:42.718Z | 35 | 33359614 | https://www.npmjs.com/package/%40modelcontextprotocol%2Fsdk |
+| @anthropic-ai/sdk | 0.94.0 | 2026-05-05T16:04:04.967Z | 0 | 18111939 | https://www.npmjs.com/package/%40anthropic-ai%2Fsdk |
+| @modelcontextprotocol/sdk | 1.29.0 | 2026-03-30T16:50:42.718Z | 36 | 33359614 | https://www.npmjs.com/package/%40modelcontextprotocol%2Fsdk |
 
 ## Warnings
 

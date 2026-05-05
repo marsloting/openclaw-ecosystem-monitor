@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-05T10:59:21.661Z",
+  "generatedAt": "2026-05-05T17:09:50.065Z",
   "policy": {
     "publicMutation": false,
     "secretsRequired": false,
@@ -10,23 +10,23 @@
       "url": "https://api.github.com/repos/openclaw/openclaw",
       "status": 200,
       "ok": true,
-      "checkedAt": "2026-05-05T10:59:21.661Z",
+      "checkedAt": "2026-05-05T17:09:50.065Z",
       "data": {
         "full_name": "openclaw/openclaw",
         "html_url": "https://github.com/openclaw/openclaw",
         "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
-        "stargazers_count": 368470,
-        "forks_count": 75900,
-        "open_issues_count": 6909,
-        "subscribers_count": 1802,
-        "pushed_at": "2026-05-05T10:37:17Z"
+        "stargazers_count": 368577,
+        "forks_count": 75937,
+        "open_issues_count": 6991,
+        "subscribers_count": 1803,
+        "pushed_at": "2026-05-05T17:08:22Z"
       }
     },
     "npmSearch": {
       "url": "https://registry.npmjs.org/-/v1/search?text=openclaw&size=10",
       "status": 200,
       "ok": true,
-      "checkedAt": "2026-05-05T10:59:21.661Z",
+      "checkedAt": "2026-05-05T17:09:50.065Z",
       "data": [
         {
           "name": "openclaw",
@@ -39,7 +39,7 @@
             "npm": "https://www.npmjs.com/package/openclaw"
           },
           "score": {
-            "final": 1735.5493,
+            "final": 1858.841,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -55,7 +55,7 @@
             "npm": "https://www.npmjs.com/package/@tencent-weixin/openclaw-weixin"
           },
           "score": {
-            "final": 369.87405,
+            "final": 371.4761,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -71,7 +71,7 @@
             "npm": "https://www.npmjs.com/package/@larksuite/openclaw-lark"
           },
           "score": {
-            "final": 330.29507,
+            "final": 329.07043,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -90,7 +90,7 @@
             "npm": "https://www.npmjs.com/package/@paperclipai/adapter-openclaw-gateway"
           },
           "score": {
-            "final": 308.77744,
+            "final": 308.76498,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -106,7 +106,7 @@
             "npm": "https://www.npmjs.com/package/@ollama/openclaw-web-search"
           },
           "score": {
-            "final": 306.33905,
+            "final": 306.32135,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -122,7 +122,7 @@
             "npm": "https://www.npmjs.com/package/@tencent-weixin/openclaw-weixin-cli"
           },
           "score": {
-            "final": 296.24365,
+            "final": 295.1361,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -141,7 +141,7 @@
             "npm": "https://www.npmjs.com/package/@tloncorp/tlon-skill"
           },
           "score": {
-            "final": 294.77383,
+            "final": 293.71823,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -157,7 +157,7 @@
             "npm": "https://www.npmjs.com/package/@lark-apaas/openclaw-extension-miaoda"
           },
           "score": {
-            "final": 287.94846,
+            "final": 287.62857,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -173,7 +173,7 @@
             "npm": "https://www.npmjs.com/package/openclaw-stepfun"
           },
           "score": {
-            "final": 269.62482,
+            "final": 268.6489,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -189,7 +189,7 @@
             "npm": "https://www.npmjs.com/package/@lark-apaas/openclaw-scripts-diagnose-cli"
           },
           "score": {
-            "final": 250.73018,
+            "final": 251.7145,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -203,7 +203,7 @@
       "url": "https://api.npmjs.org/downloads/point/last-week/openclaw",
       "status": 200,
       "ok": true,
-      "checkedAt": "2026-05-05T10:59:21.661Z",
+      "checkedAt": "2026-05-05T17:09:50.065Z",
       "data": {
         "downloads": 1071561,
         "start": "2026-04-28",
@@ -215,7 +215,7 @@
       "url": "https://api.github.com/repos/openclaw/openclaw/pulls/77710",
       "status": 200,
       "ok": true,
-      "checkedAt": "2026-05-05T10:59:21.661Z",
+      "checkedAt": "2026-05-05T17:09:50.065Z",
       "data": {
         "number": 77710,
         "title": "docs: clarify `/reset` is not an alias for `/new`",
@@ -236,110 +236,104 @@
       "url": "https://api.github.com/search/issues?q=repo%3Aopenclaw%2Fopenclaw%20is%3Aissue%20is%3Aopen%20documentation%20sort%3Aupdated-desc&per_page=10",
       "status": 200,
       "ok": true,
-      "checkedAt": "2026-05-05T10:59:21.661Z",
+      "checkedAt": "2026-05-05T17:09:50.065Z",
       "data": [
         {
-          "number": 77359,
-          "title": "[Bug]: Slash commands not registered for non-default Discord accounts in multi-bot setup",
-          "html_url": "https://github.com/openclaw/openclaw/issues/77359",
+          "number": 69541,
+          "title": "[RFC] Declarative registry for plugin-injected context XML tags (strip/sanitize/ingest contract)",
+          "html_url": "https://github.com/openclaw/openclaw/issues/69541",
           "state": "open",
-          "updated_at": "2026-05-05T09:51:27Z",
-          "labels": [
-            "bug",
-            "bug:behavior"
-          ]
-        },
-        {
-          "number": 75,
-          "title": "Linux/Windows Clawdbot Apps",
-          "html_url": "https://github.com/openclaw/openclaw/issues/75",
-          "state": "open",
-          "updated_at": "2026-05-05T09:36:26Z",
-          "labels": [
-            "enhancement",
-            "help wanted"
-          ]
-        },
-        {
-          "number": 7575,
-          "title": "feat: Sysbox Docker Runtime for Secure Container Isolation (Host Maintenance Required)",
-          "html_url": "https://github.com/openclaw/openclaw/issues/7575",
-          "state": "open",
-          "updated_at": "2026-05-05T09:10:56Z",
-          "labels": [
-            "enhancement"
-          ]
-        },
-        {
-          "number": 8147,
-          "title": "[Feature]:   Add configurable send hotkey for WebChat (Cmd+Enter instead of Enter)",
-          "html_url": "https://github.com/openclaw/openclaw/issues/8147",
-          "state": "open",
-          "updated_at": "2026-05-05T08:05:19Z",
-          "labels": [
-            "enhancement"
-          ]
-        },
-        {
-          "number": 77746,
-          "title": "Discord GroupChat replies invisible after 2026.5.3 — visibleReplies default changed",
-          "html_url": "https://github.com/openclaw/openclaw/issues/77746",
-          "state": "open",
-          "updated_at": "2026-05-05T07:52:57Z",
+          "updated_at": "2026-05-05T16:31:56Z",
           "labels": []
         },
         {
-          "number": 9443,
-          "title": "Request: Prebuilt Android APK releases",
-          "html_url": "https://github.com/openclaw/openclaw/issues/9443",
+          "number": 77919,
+          "title": "Deepgram: add native `utterances` support alongside `smartFormat`",
+          "html_url": "https://github.com/openclaw/openclaw/issues/77919",
           "state": "open",
-          "updated_at": "2026-05-05T07:50:22Z",
-          "labels": [
-            "enhancement"
-          ]
-        },
-        {
-          "number": 77434,
-          "title": "[Bug]: /new command in webchat creates a parallel child session instead of resetting the current session",
-          "html_url": "https://github.com/openclaw/openclaw/issues/77434",
-          "state": "open",
-          "updated_at": "2026-05-05T07:16:28Z",
+          "updated_at": "2026-05-05T16:06:30Z",
           "labels": []
         },
         {
-          "number": 9607,
-          "title": "Himalaya skill: missing email formatting philosophy and incorrect command syntax",
-          "html_url": "https://github.com/openclaw/openclaw/issues/9607",
+          "number": 7717,
+          "title": "Feature Request: Discord role-mention triggers",
+          "html_url": "https://github.com/openclaw/openclaw/issues/7717",
           "state": "open",
-          "updated_at": "2026-05-05T04:59:53Z",
+          "updated_at": "2026-05-05T16:05:11Z",
           "labels": [
             "enhancement"
           ]
         },
         {
-          "number": 9658,
-          "title": "Feature Request: Support streaming or file-based tool arguments to bypass JSON serialization limits",
-          "html_url": "https://github.com/openclaw/openclaw/issues/9658",
+          "number": 6625,
+          "title": "Feature: Graceful sub-agent timeout (pre-timeout warning)",
+          "html_url": "https://github.com/openclaw/openclaw/issues/6625",
           "state": "open",
-          "updated_at": "2026-05-05T03:14:56Z",
+          "updated_at": "2026-05-05T15:40:02Z",
           "labels": [
             "enhancement"
           ]
         },
         {
-          "number": 35203,
-          "title": "[RFC] Multi-Agent Collaboration Enhancement: Capability Profiling + Shared Blackboard + Layered Memory + Token Cost Governance",
-          "html_url": "https://github.com/openclaw/openclaw/issues/35203",
+          "number": 7433,
+          "title": "Improve WhatsApp/Baileys group message reliability",
+          "html_url": "https://github.com/openclaw/openclaw/issues/7433",
           "state": "open",
-          "updated_at": "2026-05-05T03:11:12Z",
+          "updated_at": "2026-05-05T15:32:26Z",
           "labels": [
             "enhancement"
           ]
+        },
+        {
+          "number": 6966,
+          "title": "Dynamic Model Switching Based on API Rate Limits",
+          "html_url": "https://github.com/openclaw/openclaw/issues/6966",
+          "state": "open",
+          "updated_at": "2026-05-05T14:25:33Z",
+          "labels": [
+            "enhancement"
+          ]
+        },
+        {
+          "number": 77872,
+          "title": "pdf tool fails with openai-codex/gpt-5.5: \"Instructions are required\"",
+          "html_url": "https://github.com/openclaw/openclaw/issues/77872",
+          "state": "open",
+          "updated_at": "2026-05-05T14:11:46Z",
+          "labels": []
+        },
+        {
+          "number": 6731,
+          "title": "[Feature]: safe/unsafe ClawdBot",
+          "html_url": "https://github.com/openclaw/openclaw/issues/6731",
+          "state": "open",
+          "updated_at": "2026-05-05T13:43:27Z",
+          "labels": [
+            "enhancement"
+          ]
+        },
+        {
+          "number": 7524,
+          "title": "Feature: groupScope option to consolidate group sessions into main",
+          "html_url": "https://github.com/openclaw/openclaw/issues/7524",
+          "state": "open",
+          "updated_at": "2026-05-05T11:23:31Z",
+          "labels": [
+            "enhancement"
+          ]
+        },
+        {
+          "number": 76952,
+          "title": "Docs/Feature Request: Explain Realtime Talk voices, voice-agent role, and mobile/phone bridge options",
+          "html_url": "https://github.com/openclaw/openclaw/issues/76952",
+          "state": "open",
+          "updated_at": "2026-05-05T11:17:45Z",
+          "labels": []
         }
       ]
     },
     "aiDevtoolHedge": {
-      "checkedAt": "2026-05-05T10:59:21.661Z",
+      "checkedAt": "2026-05-05T17:09:50.065Z",
       "data": [
         {
           "name": "ai",
@@ -394,8 +388,8 @@
         },
         {
           "name": "@anthropic-ai/sdk",
-          "latestVersion": "0.93.0",
-          "latestPublishedAt": "2026-05-04T17:13:41.698Z",
+          "latestVersion": "0.94.0",
+          "latestPublishedAt": "2026-05-05T16:04:04.967Z",
           "description": "The official TypeScript library for the Anthropic API",
           "license": "MIT",
           "repository": "https://github.com/anthropics/anthropic-sdk-typescript.git",
