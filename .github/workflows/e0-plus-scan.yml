@@ -1,0 +1,48 @@
+name: E0+ Signal Scan
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 */6 * * *"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: e0-plus-signal-scan
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout with GITHUB_TOKEN
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          git init .
+          git remote add origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git fetch --depth=1 origin "${GITHUB_REF_NAME}"
+          git checkout FETCH_HEAD
+          git switch -C "${GITHUB_REF_NAME}"
+
+      - name: Run public metadata scan
+        run: |
+          node --version
+          npm run check
+          npm run scan
+
+      - name: Commit scan output
+        run: |
+          git config user.name "wangjieweb3-design"
+          git config user.email "wangjieweb3@gmail.com"
+          git add data reports
+          if git diff --cached --quiet; then
+            echo "No scan output changes."
+          else
+            git commit -m "chore: update signal report [skip ci]"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
+

@@ -1,0 +1,14 @@
+{
+  "name": "openclaw-ecosystem-monitor",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "scan": "node scripts/e0-plus-scan.mjs",
+    "check": "node --check scripts/e0-plus-scan.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
+

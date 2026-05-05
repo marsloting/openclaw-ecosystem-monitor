@@ -1,0 +1,216 @@
+{
+  "generatedAt": "2026-05-05T07:12:18.679Z",
+  "policy": {
+    "publicMutation": false,
+    "secretsRequired": false,
+    "collection": "metadata_and_source_links_only"
+  },
+  "sources": {
+    "openclawRepo": {
+      "url": "https://api.github.com/repos/openclaw/openclaw",
+      "status": 200,
+      "ok": true,
+      "checkedAt": "2026-05-05T07:12:18.679Z",
+      "data": {
+        "full_name": "openclaw/openclaw",
+        "html_url": "https://github.com/openclaw/openclaw",
+        "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
+        "stargazers_count": 368402,
+        "forks_count": 75881,
+        "open_issues_count": 6868,
+        "subscribers_count": 1804,
+        "pushed_at": "2026-05-05T07:10:05Z"
+      }
+    },
+    "npmSearch": {
+      "url": "https://registry.npmjs.org/-/v1/search?text=openclaw&size=10",
+      "status": 200,
+      "ok": true,
+      "checkedAt": "2026-05-05T07:12:18.679Z",
+      "data": [
+        {
+          "name": "openclaw",
+          "version": "2026.5.3-1",
+          "date": "2026-05-04T09:34:57.121Z",
+          "links": {
+            "homepage": "https://github.com/openclaw/openclaw#readme",
+            "repository": "git+https://github.com/openclaw/openclaw.git",
+            "bugs": "https://github.com/openclaw/openclaw/issues",
+            "npm": "https://www.npmjs.com/package/openclaw"
+          },
+          "score": {
+            "final": 1708.1658,
+            "detail": {
+              "popularity": 1,
+              "quality": 1,
+              "maintenance": 1
+            }
+          }
+        },
+        {
+          "name": "@tencent-weixin/openclaw-weixin",
+          "version": "2.4.1",
+          "date": "2026-05-04T11:02:05.215Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/@tencent-weixin/openclaw-weixin"
+          },
+          "score": {
+            "final": 371.33743,
+            "detail": {
+              "popularity": 1,
+              "quality": 1,
+              "maintenance": 1
+            }
+          }
+        },
+        {
+          "name": "@larksuite/openclaw-lark",
+          "version": "2026.4.10",
+          "date": "2026-04-30T09:35:12.325Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/@larksuite/openclaw-lark"
+          },
+          "score": {
+            "final": 332.31113,
+            "detail": {
+              "popularity": 1,
+              "quality": 1,
+              "maintenance": 1
+            }
+          }
+        },
+        {
+          "name": "@paperclipai/adapter-openclaw-gateway",
+          "version": "2026.428.0",
+          "date": "2026-04-28T22:54:24.929Z",
+          "links": {
+            "homepage": "https://github.com/paperclipai/paperclip",
+            "repository": "git+https://github.com/paperclipai/paperclip.git",
+            "bugs": "https://github.com/paperclipai/paperclip/issues",
+            "npm": "https://www.npmjs.com/package/@paperclipai/adapter-openclaw-gateway"
+          },
+          "score": {
+            "final": 309.2688,
+            "detail": {
+              "popularity": 1,
+              "quality": 1,
+              "maintenance": 1
+            }
+          }
+        },
+        {
+          "name": "@ollama/openclaw-web-search",
+          "version": "0.2.2",
+          "date": "2026-03-17T19:11:18.204Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/@ollama/openclaw-web-search"
+          },
+          "score": {
+            "final": 305.8618,
+            "detail": {
+              "popularity": 1,
+              "quality": 1,
+              "maintenance": 1
+            }
+          }
+        },
+        {
+          "name": "@tencent-weixin/openclaw-weixin-cli",
+          "version": "2.1.3",
+          "date": "2026-05-04T11:01:36.967Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/@tencent-weixin/openclaw-weixin-cli"
+          },
+          "score": {
+            "final": 297.45386,
+            "detail": {
+              "popularity": 1,
+              "quality": 1,
+              "maintenance": 1
+            }
+          }
+        },
+        {
+          "name": "@tloncorp/tlon-skill",
+          "version": "0.3.5",
+          "date": "2026-04-10T17:06:43.292Z",
+          "links": {
+            "homepage": "https://github.com/tloncorp/tlon-skill#readme",
+            "repository": "git+https://github.com/tloncorp/tlon-skill.git",
+            "bugs": "https://github.com/tloncorp/tlon-skill/issues",
+            "npm": "https://www.npmjs.com/package/@tloncorp/tlon-skill"
+          },
+          "score": {
+            "final": 296.49518,
+            "detail": {
+              "popularity": 1,
+              "quality": 1,
+              "maintenance": 1
+            }
+          }
+        },
+        {
+          "name": "@lark-apaas/openclaw-extension-miaoda",
+          "version": "1.0.15",
+          "date": "2026-04-27T15:13:23.424Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/@lark-apaas/openclaw-extension-miaoda"
+          },
+          "score": {
+            "final": 285.53018,
+            "detail": {
+              "popularity": 1,
+              "quality": 1,
+              "maintenance": 1
+            }
+          }
+        },
+        {
+          "name": "openclaw-stepfun",
+          "version": "0.2.24",
+          "date": "2026-04-30T08:49:45.696Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/openclaw-stepfun"
+          },
+          "score": {
+            "final": 270.65747,
+            "detail": {
+              "popularity": 1,
+              "quality": 1,
+              "maintenance": 1
+            }
+          }
+        },
+        {
+          "name": "@lark-apaas/openclaw-scripts-diagnose-cli",
+          "version": "0.1.4",
+          "date": "2026-04-29T09:19:25.160Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/@lark-apaas/openclaw-scripts-diagnose-cli"
+          },
+          "score": {
+            "final": 251.93864,
+            "detail": {
+              "popularity": 1,
+              "quality": 1,
+              "maintenance": 1
+            }
+          }
+        }
+      ]
+    },
+    "npmDownloads": {
+      "url": "https://api.npmjs.org/downloads/point/last-week/openclaw",
+      "status": 200,
+      "ok": true,
+      "checkedAt": "2026-05-05T07:12:18.679Z",
+      "data": {
+        "downloads": 1105507,
+        "start": "2026-04-27",
+        "end": "2026-05-03",
+        "package": "openclaw"
+      }
+    }
+  },
+  "warnings": []
+}
