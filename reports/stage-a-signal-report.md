@@ -1,20 +1,20 @@
 # Stage A Signal Report
 
-Generated: 2026-05-05T10:58:00.760Z
+Generated: 2026-05-05T10:59:21.661Z
 
 ## Runtime
 
 - GitHub Actions: best-effort cron + manual dispatch
 - Public mutation: disabled
 - Secrets: none required
-- Previous scan: 2026-05-05T07:46:19.510Z
+- Previous scan: 2026-05-05T10:58:00.760Z
 
 ## OpenClaw Repo Signal
 
 | Metric | Value |
 |---|---:|
-| Stars | 368469 |
-| Forks | 75899 |
+| Stars | 368470 |
+| Forks | 75900 |
 | Open issues | 6909 |
 | Subscribers | 1802 |
 
