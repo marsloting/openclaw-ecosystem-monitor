@@ -1,21 +1,21 @@
 # Stage A Signal Report
 
-Generated: 2026-05-05T07:46:19.510Z
+Generated: 2026-05-05T07:53:10.371Z
 
 ## Runtime
 
 - GitHub Actions: best-effort cron + manual dispatch
 - Public mutation: disabled
 - Secrets: none required
-- Previous scan: 2026-05-05T07:45:24.007Z
+- Previous scan: 2026-05-05T07:46:19.510Z
 
 ## OpenClaw Repo Signal
 
 | Metric | Value |
 |---|---:|
-| Stars | 368412 |
-| Forks | 75884 |
-| Open issues | 6873 |
+| Stars | 368415 |
+| Forks | 75886 |
+| Open issues | 6869 |
 | Subscribers | 1804 |
 
 Source: https://github.com/openclaw/openclaw
@@ -29,14 +29,15 @@ Tracked PR: https://github.com/openclaw/openclaw/pull/77710
 | State | open |
 | Draft | false |
 | Merged | false |
-| Mergeable state | clean |
+| Mergeable state | unknown |
 | Head SHA | 893e25f76e285c74b37a79cac2b579aa6936bc90 |
-| Updated | 2026-05-05T07:38:47Z |
+| Updated | 2026-05-05T07:46:29Z |
 | Labels | docs, size: XS |
 
 Candidate issue scan is metadata-only and for Codex review before any public action.
 
-- #77746 Discord GroupChat replies invisible after 2026.5.3 — visibleReplies default changed (2026-05-05T07:44:29Z) https://github.com/openclaw/openclaw/issues/77746
+- #77746 Discord GroupChat replies invisible after 2026.5.3 — visibleReplies default changed (2026-05-05T07:52:57Z) https://github.com/openclaw/openclaw/issues/77746
+- #9443 Request: Prebuilt Android APK releases (2026-05-05T07:50:22Z) https://github.com/openclaw/openclaw/issues/9443
 - #77434 [Bug]: /new command in webchat creates a parallel child session instead of resetting the current session (2026-05-05T07:16:28Z) https://github.com/openclaw/openclaw/issues/77434
 - #9607 Himalaya skill: missing email formatting philosophy and incorrect command syntax (2026-05-05T04:59:53Z) https://github.com/openclaw/openclaw/issues/9607
 - #9658 Feature Request: Support streaming or file-based tool arguments to bypass JSON serialization limits (2026-05-05T03:14:56Z) https://github.com/openclaw/openclaw/issues/9658
@@ -45,7 +46,6 @@ Candidate issue scan is metadata-only and for Codex review before any public act
 - #33102 TUI: Add config support for --deliver flag default (2026-05-05T03:11:03Z) https://github.com/openclaw/openclaw/issues/33102
 - #32473 [Bug]: control ui requires device identity (use HTTPS or localhost secure context) (2026-05-05T03:11:02Z) https://github.com/openclaw/openclaw/issues/32473
 - #29195 ACP + Codex: silent failures, stalled sessions, and missing permission docs (2026-05-05T03:10:40Z) https://github.com/openclaw/openclaw/issues/29195
-- #22438 feat: Tiered bootstrap file loading for progressive context control (2026-05-05T03:10:15Z) https://github.com/openclaw/openclaw/issues/22438
 
 ## npm Signal
 
