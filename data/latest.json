@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-06T04:07:53.038Z",
+  "generatedAt": "2026-05-06T11:44:19.317Z",
   "policy": {
     "publicMutation": false,
     "secretsRequired": false,
@@ -10,28 +10,28 @@
       "url": "https://api.github.com/repos/openclaw/openclaw",
       "status": 200,
       "ok": true,
-      "checkedAt": "2026-05-06T04:07:53.038Z",
+      "checkedAt": "2026-05-06T11:44:19.317Z",
       "data": {
         "full_name": "openclaw/openclaw",
         "html_url": "https://github.com/openclaw/openclaw",
         "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
-        "stargazers_count": 368735,
-        "forks_count": 75995,
-        "open_issues_count": 7146,
-        "subscribers_count": 1803,
-        "pushed_at": "2026-05-06T04:04:26Z"
+        "stargazers_count": 368890,
+        "forks_count": 76043,
+        "open_issues_count": 7219,
+        "subscribers_count": 1802,
+        "pushed_at": "2026-05-06T11:41:51Z"
       }
     },
     "npmSearch": {
       "url": "https://registry.npmjs.org/-/v1/search?text=openclaw&size=10",
       "status": 200,
       "ok": true,
-      "checkedAt": "2026-05-06T04:07:53.038Z",
+      "checkedAt": "2026-05-06T11:44:19.317Z",
       "data": [
         {
           "name": "openclaw",
-          "version": "2026.5.4",
-          "date": "2026-05-05T08:11:28.661Z",
+          "version": "2026.5.5",
+          "date": "2026-05-06T08:46:22.905Z",
           "links": {
             "homepage": "https://github.com/openclaw/openclaw#readme",
             "repository": "git+https://github.com/openclaw/openclaw.git",
@@ -39,7 +39,7 @@
             "npm": "https://www.npmjs.com/package/openclaw"
           },
           "score": {
-            "final": 1799.8926,
+            "final": 1759.473,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -55,7 +55,7 @@
             "npm": "https://www.npmjs.com/package/@tencent-weixin/openclaw-weixin"
           },
           "score": {
-            "final": 368.70062,
+            "final": 366.31058,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -74,23 +74,7 @@
             "npm": "https://www.npmjs.com/package/@paperclipai/adapter-openclaw-gateway"
           },
           "score": {
-            "final": 331.1466,
-            "detail": {
-              "popularity": 1,
-              "quality": 1,
-              "maintenance": 1
-            }
-          }
-        },
-        {
-          "name": "@ollama/openclaw-web-search",
-          "version": "0.2.2",
-          "date": "2026-03-17T19:11:18.204Z",
-          "links": {
-            "npm": "https://www.npmjs.com/package/@ollama/openclaw-web-search"
-          },
-          "score": {
-            "final": 330.2633,
+            "final": 327.04895,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -106,7 +90,23 @@
             "npm": "https://www.npmjs.com/package/@larksuite/openclaw-lark"
           },
           "score": {
-            "final": 326.30188,
+            "final": 323.8193,
+            "detail": {
+              "popularity": 1,
+              "quality": 1,
+              "maintenance": 1
+            }
+          }
+        },
+        {
+          "name": "@ollama/openclaw-web-search",
+          "version": "0.2.2",
+          "date": "2026-03-17T19:11:18.204Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/@ollama/openclaw-web-search"
+          },
+          "score": {
+            "final": 323.63834,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -122,7 +122,7 @@
             "npm": "https://www.npmjs.com/package/@tencent-weixin/openclaw-weixin-cli"
           },
           "score": {
-            "final": 292.63522,
+            "final": 289.57236,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -141,23 +141,7 @@
             "npm": "https://www.npmjs.com/package/@tloncorp/tlon-skill"
           },
           "score": {
-            "final": 291.18417,
-            "detail": {
-              "popularity": 1,
-              "quality": 1,
-              "maintenance": 1
-            }
-          }
-        },
-        {
-          "name": "@lark-apaas/openclaw-extension-miaoda",
-          "version": "1.0.15",
-          "date": "2026-04-27T15:13:23.424Z",
-          "links": {
-            "npm": "https://www.npmjs.com/package/@lark-apaas/openclaw-extension-miaoda"
-          },
-          "score": {
-            "final": 284.2841,
+            "final": 288.85767,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -173,7 +157,23 @@
             "npm": "https://www.npmjs.com/package/openclaw-stepfun"
           },
           "score": {
-            "final": 266.46396,
+            "final": 264.85965,
+            "detail": {
+              "popularity": 1,
+              "quality": 1,
+              "maintenance": 1
+            }
+          }
+        },
+        {
+          "name": "@lark-apaas/openclaw-extension-miaoda",
+          "version": "1.0.15",
+          "date": "2026-04-27T15:13:23.424Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/@lark-apaas/openclaw-extension-miaoda"
+          },
+          "score": {
+            "final": 263.7227,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -189,7 +189,7 @@
             "npm": "https://www.npmjs.com/package/@wecom/wecom-openclaw-cli"
           },
           "score": {
-            "final": 265.35004,
+            "final": 262.94687,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -203,11 +203,11 @@
       "url": "https://api.npmjs.org/downloads/point/last-week/openclaw",
       "status": 200,
       "ok": true,
-      "checkedAt": "2026-05-06T04:07:53.038Z",
+      "checkedAt": "2026-05-06T11:44:19.317Z",
       "data": {
-        "downloads": 1071561,
-        "start": "2026-04-28",
-        "end": "2026-05-04",
+        "downloads": 1045166,
+        "start": "2026-04-29",
+        "end": "2026-05-05",
         "package": "openclaw"
       }
     },
@@ -215,7 +215,7 @@
       "url": "https://api.github.com/repos/openclaw/openclaw/pulls/77710",
       "status": 200,
       "ok": true,
-      "checkedAt": "2026-05-06T04:07:53.038Z",
+      "checkedAt": "2026-05-06T11:44:19.317Z",
       "data": {
         "number": 77710,
         "title": "docs: clarify `/reset` is not an alias for `/new`",
@@ -223,7 +223,7 @@
         "state": "open",
         "draft": false,
         "merged": false,
-        "mergeable_state": "unknown",
+        "mergeable_state": "clean",
         "head_sha": "893e25f76e285c74b37a79cac2b579aa6936bc90",
         "updated_at": "2026-05-05T07:46:29Z",
         "labels": [
@@ -236,115 +236,104 @@
       "url": "https://api.github.com/search/issues?q=repo%3Aopenclaw%2Fopenclaw%20is%3Aissue%20is%3Aopen%20documentation%20sort%3Aupdated-desc&per_page=10",
       "status": 200,
       "ok": true,
-      "checkedAt": "2026-05-06T04:07:53.038Z",
+      "checkedAt": "2026-05-06T11:44:19.317Z",
       "data": [
         {
-          "number": 75,
-          "title": "Linux/Windows Clawdbot Apps",
-          "html_url": "https://github.com/openclaw/openclaw/issues/75",
+          "number": 78294,
+          "title": "Proposal: ASFS skill format + Handoff Protocol for cross-agent interoperability",
+          "html_url": "https://github.com/openclaw/openclaw/issues/78294",
           "state": "open",
-          "updated_at": "2026-05-06T04:04:29Z",
-          "labels": [
-            "enhancement",
-            "help wanted"
-          ]
-        },
-        {
-          "number": 7575,
-          "title": "feat: Sysbox Docker Runtime for Secure Container Isolation (Host Maintenance Required)",
-          "html_url": "https://github.com/openclaw/openclaw/issues/7575",
-          "state": "open",
-          "updated_at": "2026-05-06T03:40:30Z",
-          "labels": [
-            "enhancement"
-          ]
-        },
-        {
-          "number": 78222,
-          "title": "OpenClaw 2026.5.4 Gateway status/health inconsistency on WSL2: diagnostics report ok/listener, external checks show no listener and HTTP 000",
-          "html_url": "https://github.com/openclaw/openclaw/issues/78222",
-          "state": "open",
-          "updated_at": "2026-05-06T02:51:11Z",
+          "updated_at": "2026-05-06T11:37:40Z",
           "labels": []
         },
         {
-          "number": 8147,
-          "title": "[Feature]:   Add configurable send hotkey for WebChat (Cmd+Enter instead of Enter)",
-          "html_url": "https://github.com/openclaw/openclaw/issues/8147",
+          "number": 78407,
+          "title": "[Bug]: openclaw doctor --fix rewrites openai-codex/* model refs to openai/* on 2026.5.4 → 2026.5.5 update, locking out ChatGPT-OAuth users",
+          "html_url": "https://github.com/openclaw/openclaw/issues/78407",
           "state": "open",
-          "updated_at": "2026-05-06T02:47:44Z",
-          "labels": [
-            "enhancement"
-          ]
-        },
-        {
-          "number": 78204,
-          "title": "[Bug]: the bot frequently fails to reply to messages in Feishu group chats, while private messages work normally.When mentioned in the group, it shows the typing indicator after receiving the message",
-          "html_url": "https://github.com/openclaw/openclaw/issues/78204",
-          "state": "open",
-          "updated_at": "2026-05-06T02:19:05Z",
-          "labels": [
-            "bug",
-            "bug:behavior"
-          ]
-        },
-        {
-          "number": 78000,
-          "title": "v2026.5.4: model allowlist breaks existing cron jobs using claude-haiku-4-5; claude-haiku-4-7 also unrecognised by Anthropic API",
-          "html_url": "https://github.com/openclaw/openclaw/issues/78000",
-          "state": "open",
-          "updated_at": "2026-05-06T01:33:55Z",
+          "updated_at": "2026-05-06T11:37:26Z",
           "labels": []
         },
         {
-          "number": 10118,
-          "title": "TUI: Support Shift+Enter for newline (Enter to send)",
-          "html_url": "https://github.com/openclaw/openclaw/issues/10118",
+          "number": 6625,
+          "title": "Feature: Graceful sub-agent timeout (pre-timeout warning)",
+          "html_url": "https://github.com/openclaw/openclaw/issues/6625",
           "state": "open",
-          "updated_at": "2026-05-06T01:27:55Z",
-          "labels": [
-            "enhancement",
-            "tui"
-          ]
-        },
-        {
-          "number": 9607,
-          "title": "Himalaya skill: missing email formatting philosophy and incorrect command syntax",
-          "html_url": "https://github.com/openclaw/openclaw/issues/9607",
-          "state": "open",
-          "updated_at": "2026-05-06T00:49:43Z",
+          "updated_at": "2026-05-06T11:07:20Z",
           "labels": [
             "enhancement"
           ]
         },
         {
-          "number": 78096,
-          "title": "Explore per-agent worker isolation, VFS scratch storage, and host filesystem capabilities",
-          "html_url": "https://github.com/openclaw/openclaw/issues/78096",
+          "number": 7717,
+          "title": "Feature Request: Discord role-mention triggers",
+          "html_url": "https://github.com/openclaw/openclaw/issues/7717",
           "state": "open",
-          "updated_at": "2026-05-05T23:54:26Z",
-          "labels": [
-            "enhancement",
-            "gateway",
-            "security",
-            "agents",
-            "maintainer"
-          ]
-        },
-        {
-          "number": 9443,
-          "title": "Request: Prebuilt Android APK releases",
-          "html_url": "https://github.com/openclaw/openclaw/issues/9443",
-          "state": "open",
-          "updated_at": "2026-05-05T22:14:34Z",
+          "updated_at": "2026-05-06T10:59:53Z",
           "labels": [
             "enhancement"
           ]
+        },
+        {
+          "number": 7433,
+          "title": "Improve WhatsApp/Baileys group message reliability",
+          "html_url": "https://github.com/openclaw/openclaw/issues/7433",
+          "state": "open",
+          "updated_at": "2026-05-06T10:44:42Z",
+          "labels": [
+            "enhancement"
+          ]
+        },
+        {
+          "number": 78418,
+          "title": "Allow operators to disable the config-file watcher / auto-clobber",
+          "html_url": "https://github.com/openclaw/openclaw/issues/78418",
+          "state": "open",
+          "updated_at": "2026-05-06T10:38:04Z",
+          "labels": []
+        },
+        {
+          "number": 62985,
+          "title": "[Bug]: Telegram multi-account config error",
+          "html_url": "https://github.com/openclaw/openclaw/issues/62985",
+          "state": "open",
+          "updated_at": "2026-05-06T10:04:17Z",
+          "labels": [
+            "bug"
+          ]
+        },
+        {
+          "number": 6966,
+          "title": "Dynamic Model Switching Based on API Rate Limits",
+          "html_url": "https://github.com/openclaw/openclaw/issues/6966",
+          "state": "open",
+          "updated_at": "2026-05-06T09:17:15Z",
+          "labels": [
+            "enhancement"
+          ]
+        },
+        {
+          "number": 6731,
+          "title": "[Feature]: safe/unsafe ClawdBot",
+          "html_url": "https://github.com/openclaw/openclaw/issues/6731",
+          "state": "open",
+          "updated_at": "2026-05-06T08:28:30Z",
+          "labels": [
+            "enhancement"
+          ]
+        },
+        {
+          "number": 77254,
+          "title": "[Bug]: Discord outbound delivery loses adapter after plugin registry reload",
+          "html_url": "https://github.com/openclaw/openclaw/issues/77254",
+          "state": "open",
+          "updated_at": "2026-05-06T07:05:48Z",
+          "labels": []
         }
       ]
     },
     "aiDevtoolHedge": {
-      "checkedAt": "2026-05-06T04:07:53.038Z",
+      "checkedAt": "2026-05-06T11:44:19.317Z",
       "data": [
         {
           "name": "ai",
@@ -355,8 +344,8 @@
           "homepage": "https://ai-sdk.dev/docs",
           "repository": "git+https://github.com/vercel/ai.git",
           "npm": "https://www.npmjs.com/package/ai",
-          "weeklyDownloads": 11949802,
-          "downloadsWindow": "2026-04-28 to 2026-05-04",
+          "weeklyDownloads": 11906448,
+          "downloadsWindow": "2026-04-29 to 2026-05-05",
           "status": {
             "metadata": 200,
             "downloads": 200,
@@ -372,8 +361,8 @@
           "homepage": "https://ai-sdk.dev/docs",
           "repository": "git+https://github.com/vercel/ai.git",
           "npm": "https://www.npmjs.com/package/%40ai-sdk%2Fopenai",
-          "weeklyDownloads": 5799994,
-          "downloadsWindow": "2026-04-28 to 2026-05-04",
+          "weeklyDownloads": 5774549,
+          "downloadsWindow": "2026-04-29 to 2026-05-05",
           "status": {
             "metadata": 200,
             "downloads": 200,
@@ -389,8 +378,8 @@
           "homepage": "https://github.com/openai/openai-node#readme",
           "repository": "git+https://github.com/openai/openai-node.git",
           "npm": "https://www.npmjs.com/package/openai",
-          "weeklyDownloads": 20670114,
-          "downloadsWindow": "2026-04-28 to 2026-05-04",
+          "weeklyDownloads": 20585685,
+          "downloadsWindow": "2026-04-29 to 2026-05-05",
           "status": {
             "metadata": 200,
             "downloads": 200,
@@ -405,8 +394,8 @@
           "license": "MIT",
           "repository": "https://github.com/anthropics/anthropic-sdk-typescript.git",
           "npm": "https://www.npmjs.com/package/%40anthropic-ai%2Fsdk",
-          "weeklyDownloads": 18111939,
-          "downloadsWindow": "2026-04-28 to 2026-05-04",
+          "weeklyDownloads": 17930476,
+          "downloadsWindow": "2026-04-29 to 2026-05-05",
           "status": {
             "metadata": 200,
             "downloads": 200,
@@ -422,8 +411,8 @@
           "homepage": "https://modelcontextprotocol.io",
           "repository": "git+https://github.com/modelcontextprotocol/typescript-sdk.git",
           "npm": "https://www.npmjs.com/package/%40modelcontextprotocol%2Fsdk",
-          "weeklyDownloads": 33359614,
-          "downloadsWindow": "2026-04-28 to 2026-05-04",
+          "weeklyDownloads": 33911591,
+          "downloadsWindow": "2026-04-29 to 2026-05-05",
           "status": {
             "metadata": 200,
             "downloads": 200,
