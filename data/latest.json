@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-06T14:44:48.165Z",
+  "generatedAt": "2026-05-06T14:51:17.559Z",
   "policy": {
     "publicMutation": false,
     "secretsRequired": false,
@@ -10,23 +10,23 @@
       "url": "https://api.github.com/repos/openclaw/openclaw",
       "status": 200,
       "ok": true,
-      "checkedAt": "2026-05-06T14:44:48.165Z",
+      "checkedAt": "2026-05-06T14:51:17.559Z",
       "data": {
         "full_name": "openclaw/openclaw",
         "html_url": "https://github.com/openclaw/openclaw",
         "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
-        "stargazers_count": 368955,
+        "stargazers_count": 368959,
         "forks_count": 76065,
-        "open_issues_count": 7244,
+        "open_issues_count": 7243,
         "subscribers_count": 1803,
-        "pushed_at": "2026-05-06T14:40:43Z"
+        "pushed_at": "2026-05-06T14:48:24Z"
       }
     },
     "npmSearch": {
       "url": "https://registry.npmjs.org/-/v1/search?text=openclaw&size=10",
       "status": 200,
       "ok": true,
-      "checkedAt": "2026-05-06T14:44:48.165Z",
+      "checkedAt": "2026-05-06T14:51:17.559Z",
       "data": [
         {
           "name": "openclaw",
@@ -39,7 +39,7 @@
             "npm": "https://www.npmjs.com/package/openclaw"
           },
           "score": {
-            "final": 1760.0605,
+            "final": 1760.0676,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -55,7 +55,7 @@
             "npm": "https://www.npmjs.com/package/@tencent-weixin/openclaw-weixin"
           },
           "score": {
-            "final": 365.17487,
+            "final": 365.1234,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -74,7 +74,7 @@
             "npm": "https://www.npmjs.com/package/@paperclipai/adapter-openclaw-gateway"
           },
           "score": {
-            "final": 325.9312,
+            "final": 325.92654,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -90,7 +90,7 @@
             "npm": "https://www.npmjs.com/package/@larksuite/openclaw-lark"
           },
           "score": {
-            "final": 322.853,
+            "final": 322.8686,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -106,7 +106,7 @@
             "npm": "https://www.npmjs.com/package/@ollama/openclaw-web-search"
           },
           "score": {
-            "final": 322.44046,
+            "final": 322.35583,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -122,7 +122,7 @@
             "npm": "https://www.npmjs.com/package/@tencent-weixin/openclaw-weixin-cli"
           },
           "score": {
-            "final": 288.69223,
+            "final": 288.70657,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -141,7 +141,7 @@
             "npm": "https://www.npmjs.com/package/@tloncorp/tlon-skill"
           },
           "score": {
-            "final": 287.8664,
+            "final": 287.881,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -157,7 +157,7 @@
             "npm": "https://www.npmjs.com/package/openclaw-stepfun"
           },
           "score": {
-            "final": 264.1112,
+            "final": 264.12354,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -173,7 +173,7 @@
             "npm": "https://www.npmjs.com/package/@wecom/wecom-openclaw-cli"
           },
           "score": {
-            "final": 262.07886,
+            "final": 262.07285,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -192,7 +192,7 @@
             "npm": "https://www.npmjs.com/package/@openclaw/discord"
           },
           "score": {
-            "final": 259.00317,
+            "final": 258.93723,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -206,7 +206,7 @@
       "url": "https://api.npmjs.org/downloads/point/last-week/openclaw",
       "status": 200,
       "ok": true,
-      "checkedAt": "2026-05-06T14:44:48.165Z",
+      "checkedAt": "2026-05-06T14:51:17.559Z",
       "data": {
         "downloads": 1045166,
         "start": "2026-04-29",
@@ -218,7 +218,7 @@
       "url": "https://api.github.com/repos/openclaw/openclaw/pulls/77710",
       "status": 200,
       "ok": true,
-      "checkedAt": "2026-05-06T14:44:48.165Z",
+      "checkedAt": "2026-05-06T14:51:17.559Z",
       "data": {
         "number": 77710,
         "title": "docs: clarify `/reset` is not an alias for `/new`",
@@ -226,7 +226,7 @@
         "state": "open",
         "draft": false,
         "merged": false,
-        "mergeable_state": "unknown",
+        "mergeable_state": "clean",
         "head_sha": "893e25f76e285c74b37a79cac2b579aa6936bc90",
         "updated_at": "2026-05-05T07:46:29Z",
         "labels": [
@@ -239,7 +239,7 @@
       "url": "https://api.github.com/search/issues?q=repo%3Aopenclaw%2Fopenclaw%20is%3Aissue%20is%3Aopen%20documentation%20sort%3Aupdated-desc&per_page=10",
       "status": 200,
       "ok": true,
-      "checkedAt": "2026-05-06T14:44:48.165Z",
+      "checkedAt": "2026-05-06T14:51:17.559Z",
       "data": [
         {
           "number": 78407,
@@ -332,7 +332,7 @@
       ]
     },
     "aiDevtoolHedge": {
-      "checkedAt": "2026-05-06T14:44:48.165Z",
+      "checkedAt": "2026-05-06T14:51:17.559Z",
       "data": [
         {
           "name": "ai",
@@ -421,7 +421,7 @@
       ]
     },
     "pypiAiDevtoolHedge": {
-      "checkedAt": "2026-05-06T14:44:48.165Z",
+      "checkedAt": "2026-05-06T14:51:17.559Z",
       "data": [
         {
           "name": "langchain",

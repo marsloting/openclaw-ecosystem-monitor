@@ -1,21 +1,21 @@
 # Stage A Signal Report
 
-Generated: 2026-05-06T14:44:48.165Z
+Generated: 2026-05-06T14:51:17.559Z
 
 ## Runtime
 
 - GitHub Actions: best-effort cron + manual dispatch
 - Public mutation: disabled
 - Secrets: none required
-- Previous scan: 2026-05-06T14:41:39.995Z
+- Previous scan: 2026-05-06T14:44:48.165Z
 
 ## OpenClaw Repo Signal
 
 | Metric | Value |
 |---|---:|
-| Stars | 368955 |
+| Stars | 368959 |
 | Forks | 76065 |
-| Open issues | 7244 |
+| Open issues | 7243 |
 | Subscribers | 1803 |
 
 Source: https://github.com/openclaw/openclaw
@@ -29,7 +29,7 @@ Tracked PR: https://github.com/openclaw/openclaw/pull/77710
 | State | open |
 | Draft | false |
 | Merged | false |
-| Mergeable state | unknown |
+| Mergeable state | clean |
 | Head SHA | 893e25f76e285c74b37a79cac2b579aa6936bc90 |
 | Updated | 2026-05-05T07:46:29Z |
 | Labels | docs, size: XS |
