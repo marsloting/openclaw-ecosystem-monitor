@@ -1,22 +1,22 @@
 # Stage A Signal Report
 
-Generated: 2026-05-06T11:44:19.317Z
+Generated: 2026-05-06T14:49:20.169Z
 
 ## Runtime
 
 - GitHub Actions: best-effort cron + manual dispatch
 - Public mutation: disabled
 - Secrets: none required
-- Previous scan: 2026-05-06T04:07:53.038Z
+- Previous scan: 2026-05-06T11:44:19.317Z
 
 ## OpenClaw Repo Signal
 
 | Metric | Value |
 |---|---:|
-| Stars | 368890 |
-| Forks | 76043 |
-| Open issues | 7219 |
-| Subscribers | 1802 |
+| Stars | 368958 |
+| Forks | 76065 |
+| Open issues | 7242 |
+| Subscribers | 1803 |
 
 Source: https://github.com/openclaw/openclaw
 
@@ -36,16 +36,16 @@ Tracked PR: https://github.com/openclaw/openclaw/pull/77710
 
 Candidate issue scan is metadata-only and for Codex review before any public action.
 
+- #78407 [Bug]: openclaw doctor --fix rewrites openai-codex/* model refs to openai/* on 2026.5.4 → 2026.5.5 update, locking out ChatGPT-OAuth users (2026-05-06T14:33:16Z) https://github.com/openclaw/openclaw/issues/78407
+- #7648 Feature Request: Option to disable auto-scroll in Control UI / WebChat (2026-05-06T14:07:39Z) https://github.com/openclaw/openclaw/issues/7648
+- #78495 docs: MEDIA: directive silently ignored when wrapped in markdown formatting (2026-05-06T13:48:56Z) https://github.com/openclaw/openclaw/issues/78495
+- #78493 sudo openclaw update can create mixed ownership, then doctor overwrites config after EACCES/read failure (2026-05-06T13:45:28Z) https://github.com/openclaw/openclaw/issues/78493
+- #7669 [Feature] Re-enable dev channel distribution tag for npm releases (2026-05-06T13:15:20Z) https://github.com/openclaw/openclaw/issues/7669
+- #78476 Feature: Google Home API bridge in Android app for native smart-home control (2026-05-06T13:09:48Z) https://github.com/openclaw/openclaw/issues/78476
+- #78418 Allow operators to disable the config-file watcher / auto-clobber (2026-05-06T12:40:29Z) https://github.com/openclaw/openclaw/issues/78418
+- #8295 [Feature]: Add allowBots support for Telegram groups (parity with Discord/Slack) (2026-05-06T12:40:13Z) https://github.com/openclaw/openclaw/issues/8295
+- #6625 Feature: Graceful sub-agent timeout (pre-timeout warning) (2026-05-06T12:15:38Z) https://github.com/openclaw/openclaw/issues/6625
 - #78294 Proposal: ASFS skill format + Handoff Protocol for cross-agent interoperability (2026-05-06T11:37:40Z) https://github.com/openclaw/openclaw/issues/78294
-- #78407 [Bug]: openclaw doctor --fix rewrites openai-codex/* model refs to openai/* on 2026.5.4 → 2026.5.5 update, locking out ChatGPT-OAuth users (2026-05-06T11:37:26Z) https://github.com/openclaw/openclaw/issues/78407
-- #6625 Feature: Graceful sub-agent timeout (pre-timeout warning) (2026-05-06T11:07:20Z) https://github.com/openclaw/openclaw/issues/6625
-- #7717 Feature Request: Discord role-mention triggers (2026-05-06T10:59:53Z) https://github.com/openclaw/openclaw/issues/7717
-- #7433 Improve WhatsApp/Baileys group message reliability (2026-05-06T10:44:42Z) https://github.com/openclaw/openclaw/issues/7433
-- #78418 Allow operators to disable the config-file watcher / auto-clobber (2026-05-06T10:38:04Z) https://github.com/openclaw/openclaw/issues/78418
-- #62985 [Bug]: Telegram multi-account config error (2026-05-06T10:04:17Z) https://github.com/openclaw/openclaw/issues/62985
-- #6966 Dynamic Model Switching Based on API Rate Limits (2026-05-06T09:17:15Z) https://github.com/openclaw/openclaw/issues/6966
-- #6731 [Feature]: safe/unsafe ClawdBot (2026-05-06T08:28:30Z) https://github.com/openclaw/openclaw/issues/6731
-- #77254 [Bug]: Discord outbound delivery loses adapter after plugin registry reload (2026-05-06T07:05:48Z) https://github.com/openclaw/openclaw/issues/77254
 
 ## npm Signal
 
@@ -65,8 +65,8 @@ Package: openclaw
 - @tencent-weixin/openclaw-weixin-cli@2.1.3 (2026-05-04T11:01:36.967Z)
 - @tloncorp/tlon-skill@0.3.5 (2026-04-10T17:06:43.292Z)
 - openclaw-stepfun@0.2.24 (2026-04-30T08:49:45.696Z)
-- @lark-apaas/openclaw-extension-miaoda@1.0.15 (2026-04-27T15:13:23.424Z)
 - @wecom/wecom-openclaw-cli@1.0.25 (2026-04-11T03:04:20.356Z)
+- @openclaw/discord@2026.5.5 (2026-05-06T08:35:00.548Z)
 
 ## Outside Hedge: AI/Devtool npm Packages
 
