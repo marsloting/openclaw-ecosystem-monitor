@@ -1,21 +1,21 @@
 # Stage A Signal Report
 
-Generated: 2026-05-06T14:51:17.559Z
+Generated: 2026-05-06T20:02:43.633Z
 
 ## Runtime
 
 - GitHub Actions: best-effort cron + manual dispatch
 - Public mutation: disabled
 - Secrets: none required
-- Previous scan: 2026-05-06T14:44:48.165Z
+- Previous scan: 2026-05-06T14:51:17.559Z
 
 ## OpenClaw Repo Signal
 
 | Metric | Value |
 |---|---:|
-| Stars | 368959 |
-| Forks | 76065 |
-| Open issues | 7243 |
+| Stars | 369025 |
+| Forks | 76106 |
+| Open issues | 7313 |
 | Subscribers | 1803 |
 
 Source: https://github.com/openclaw/openclaw
@@ -29,23 +29,23 @@ Tracked PR: https://github.com/openclaw/openclaw/pull/77710
 | State | open |
 | Draft | false |
 | Merged | false |
-| Mergeable state | clean |
+| Mergeable state | unknown |
 | Head SHA | 893e25f76e285c74b37a79cac2b579aa6936bc90 |
 | Updated | 2026-05-05T07:46:29Z |
 | Labels | docs, size: XS |
 
 Candidate issue scan is metadata-only and for Codex review before any public action.
 
-- #78407 [Bug]: openclaw doctor --fix rewrites openai-codex/* model refs to openai/* on 2026.5.4 → 2026.5.5 update, locking out ChatGPT-OAuth users (2026-05-06T14:33:16Z) https://github.com/openclaw/openclaw/issues/78407
-- #7648 Feature Request: Option to disable auto-scroll in Control UI / WebChat (2026-05-06T14:07:39Z) https://github.com/openclaw/openclaw/issues/7648
-- #78495 docs: MEDIA: directive silently ignored when wrapped in markdown formatting (2026-05-06T13:48:56Z) https://github.com/openclaw/openclaw/issues/78495
-- #78493 sudo openclaw update can create mixed ownership, then doctor overwrites config after EACCES/read failure (2026-05-06T13:45:28Z) https://github.com/openclaw/openclaw/issues/78493
-- #7669 [Feature] Re-enable dev channel distribution tag for npm releases (2026-05-06T13:15:20Z) https://github.com/openclaw/openclaw/issues/7669
-- #78476 Feature: Google Home API bridge in Android app for native smart-home control (2026-05-06T13:09:48Z) https://github.com/openclaw/openclaw/issues/78476
-- #78418 Allow operators to disable the config-file watcher / auto-clobber (2026-05-06T12:40:29Z) https://github.com/openclaw/openclaw/issues/78418
-- #8295 [Feature]: Add allowBots support for Telegram groups (parity with Discord/Slack) (2026-05-06T12:40:13Z) https://github.com/openclaw/openclaw/issues/8295
-- #6625 Feature: Graceful sub-agent timeout (pre-timeout warning) (2026-05-06T12:15:38Z) https://github.com/openclaw/openclaw/issues/6625
-- #78294 Proposal: ASFS skill format + Handoff Protocol for cross-agent interoperability (2026-05-06T11:37:40Z) https://github.com/openclaw/openclaw/issues/78294
+- #78593 [Bug]: WhatsApp channel unavailable after upgrade to 2026.5.5 until @openclaw/whatsapp is manually installed #1 (2026-05-06T19:20:08Z) https://github.com/openclaw/openclaw/issues/78593
+- #78407 [Bug]: openclaw doctor --fix rewrites openai-codex/* model refs to openai/* on 2026.5.4 → 2026.5.5 update, locking out ChatGPT-OAuth users (2026-05-06T19:12:22Z) https://github.com/openclaw/openclaw/issues/78407
+- #78222 OpenClaw 2026.5.4 Gateway status/health inconsistency on WSL2: diagnostics report ok/listener, external checks show no listener and HTTP 000 (2026-05-06T19:01:37Z) https://github.com/openclaw/openclaw/issues/78222
+- #9607 Himalaya skill: missing email formatting philosophy and incorrect command syntax (2026-05-06T18:47:55Z) https://github.com/openclaw/openclaw/issues/9607
+- #78495 docs: MEDIA: directive silently ignored when wrapped in markdown formatting (2026-05-06T18:43:38Z) https://github.com/openclaw/openclaw/issues/78495
+- #9443 Request: Prebuilt Android APK releases (2026-05-06T17:37:58Z) https://github.com/openclaw/openclaw/issues/9443
+- #78538 [Docs]: `secrets apply --from <plan.json>` accepts `providerUpserts` and `providerDeletes`, but `docs/gateway/secrets-plan-contract.md` only documents `targets` (2026-05-06T16:54:43Z) https://github.com/openclaw/openclaw/issues/78538
+- #73323 [Bug]: Gateway runtime degradation: pricing fetch 60s timeouts, Telegram polling stalls, slow RPC — chronic across 4.23/4.25/4.26 on Windows 11 + Node 24 (2026-05-06T16:43:14Z) https://github.com/openclaw/openclaw/issues/73323
+- #9658 Feature Request: Support streaming or file-based tool arguments to bypass JSON serialization limits (2026-05-06T16:42:04Z) https://github.com/openclaw/openclaw/issues/9658
+- #8285 Feature request: Auto-send intent/acknowledgment text message before agent processing (2026-05-06T16:17:15Z) https://github.com/openclaw/openclaw/issues/8285
 
 ## npm Signal
 
@@ -57,7 +57,7 @@ Package: openclaw
 
 ## Related npm Packages
 
-- openclaw@2026.5.5 (2026-05-06T08:46:22.905Z)
+- openclaw@2026.5.6 (2026-05-06T17:33:28.172Z)
 - @tencent-weixin/openclaw-weixin@2.4.1 (2026-05-04T11:02:05.215Z)
 - @paperclipai/adapter-openclaw-gateway@2026.428.0 (2026-04-28T22:54:24.929Z)
 - @larksuite/openclaw-lark@2026.4.10 (2026-04-30T09:35:12.325Z)
@@ -66,7 +66,7 @@ Package: openclaw
 - @tloncorp/tlon-skill@0.3.5 (2026-04-10T17:06:43.292Z)
 - openclaw-stepfun@0.2.24 (2026-04-30T08:49:45.696Z)
 - @wecom/wecom-openclaw-cli@1.0.25 (2026-04-11T03:04:20.356Z)
-- @openclaw/discord@2026.5.5 (2026-05-06T08:35:00.548Z)
+- @openclaw/discord@2026.5.6 (2026-05-06T17:24:05.389Z)
 
 ## Outside Hedge: AI/Devtool npm Packages
 
@@ -74,11 +74,11 @@ This hedge watches package freshness and dependency-market movement outside Open
 
 | Package | Latest | Updated | Age days | Weekly downloads | Source |
 |---|---:|---|---:|---:|---|
-| ai | 6.0.175 | 2026-05-04T17:24:36.726Z | 1 | 11906448 | https://www.npmjs.com/package/ai |
-| @ai-sdk/openai | 3.0.61 | 2026-05-05T18:14:16.342Z | 0 | 5774549 | https://www.npmjs.com/package/%40ai-sdk%2Fopenai |
-| openai | 6.36.0 | 2026-05-04T17:36:28.121Z | 1 | 20585685 | https://www.npmjs.com/package/openai |
-| @anthropic-ai/sdk | 0.94.0 | 2026-05-05T16:04:04.967Z | 0 | 17930476 | https://www.npmjs.com/package/%40anthropic-ai%2Fsdk |
-| @modelcontextprotocol/sdk | 1.29.0 | 2026-03-30T16:50:42.718Z | 36 | 33911591 | https://www.npmjs.com/package/%40modelcontextprotocol%2Fsdk |
+| ai | 6.0.175 | 2026-05-04T17:24:36.726Z | 2 | 11906448 | https://www.npmjs.com/package/ai |
+| @ai-sdk/openai | 3.0.62 | 2026-05-06T17:15:47.976Z | 0 | 5774549 | https://www.npmjs.com/package/%40ai-sdk%2Fopenai |
+| openai | 6.36.0 | 2026-05-04T17:36:28.121Z | 2 | 20585685 | https://www.npmjs.com/package/openai |
+| @anthropic-ai/sdk | 0.95.0 | 2026-05-06T15:09:44.211Z | 0 | 17930476 | https://www.npmjs.com/package/%40anthropic-ai%2Fsdk |
+| @modelcontextprotocol/sdk | 1.29.0 | 2026-03-30T16:50:42.718Z | 37 | 33911591 | https://www.npmjs.com/package/%40modelcontextprotocol%2Fsdk |
 
 ## Outside Hedge: PyPI AI/Devtool Packages
 
@@ -89,8 +89,8 @@ This hedge watches Python AI/devtool package freshness outside OpenClaw. It is m
 | langchain | 1.2.17 | 2026-04-30T20:25:34.626317Z | 5 | https://pypi.org/project/langchain/ |
 | llama-index | 0.14.21 | 2026-04-21T00:18:48.060132Z | 15 | https://pypi.org/project/llama-index/ |
 | litellm | 1.83.14 | 2026-04-26T03:16:10.176009Z | 10 | https://pypi.org/project/litellm/ |
-| anthropic | 0.99.0 | 2026-05-05T16:03:07.986901Z | 0 | https://pypi.org/project/anthropic/ |
-| openai | 2.34.0 | 2026-05-04T17:34:08.721260Z | 1 | https://pypi.org/project/openai/ |
+| anthropic | 0.100.0 | 2026-05-06T15:07:13.578142Z | 0 | https://pypi.org/project/anthropic/ |
+| openai | 2.35.0 | 2026-05-06T16:36:55.166157Z | 0 | https://pypi.org/project/openai/ |
 
 ## Warnings
 
