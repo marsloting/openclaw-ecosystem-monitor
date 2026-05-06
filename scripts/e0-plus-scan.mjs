@@ -14,6 +14,13 @@ const hedgePackages = [
   "@anthropic-ai/sdk",
   "@modelcontextprotocol/sdk"
 ];
+const pypiHedgePackages = [
+  "langchain",
+  "llama-index",
+  "litellm",
+  "anthropic",
+  "openai"
+];
 
 async function fetchJson(url, options = {}) {
   const response = await fetch(url, {
@@ -130,6 +137,38 @@ function compactHedgePackages(results) {
   };
 }
 
+function compactPypiPackage(metadataPayload) {
+  const metadata = metadataPayload?.body || {};
+  const latestVersion = metadata.info?.version;
+  const releaseFiles = latestVersion ? metadata.releases?.[latestVersion] || [] : [];
+  const latestPublishedAt = releaseFiles
+    .map((file) => file.upload_time_iso_8601 || file.upload_time)
+    .filter(Boolean)
+    .sort()
+    .at(-1) || null;
+  return {
+    name: metadata.info?.name,
+    latestVersion,
+    latestPublishedAt,
+    summary: metadata.info?.summary,
+    license: metadata.info?.license,
+    homepage: metadata.info?.home_page,
+    projectUrls: metadata.info?.project_urls,
+    pypi: `https://pypi.org/project/${metadata.info?.name || ""}/`,
+    status: {
+      metadata: metadataPayload?.status,
+      ok: Boolean(metadataPayload?.ok)
+    }
+  };
+}
+
+function compactPypiHedgePackages(results) {
+  return {
+    checkedAt: now.toISOString(),
+    data: results.map(({ metadata }) => compactPypiPackage(metadata))
+  };
+}
+
 function daysSince(value) {
   if (!value) return "n/a";
   const date = new Date(value);
@@ -185,6 +224,7 @@ function renderReport(snapshot, previousState) {
   const pr = snapshot.sources.p1PullRequest.data;
   const issues = snapshot.sources.p1IssueCandidates.data;
   const hedge = snapshot.sources.aiDevtoolHedge.data;
+  const pypiHedge = snapshot.sources.pypiAiDevtoolHedge.data;
   const warnings = snapshot.warnings.length ? snapshot.warnings.map((w) => `- ${w}`).join("\n") : "- none";
 
   return `# Stage A Signal Report
@@ -247,6 +287,14 @@ This hedge watches package freshness and dependency-market movement outside Open
 |---|---:|---|---:|---:|---|
 ${hedge.map((pkg) => `| ${pkg.name} | ${pkg.latestVersion ?? "n/a"} | ${pkg.latestPublishedAt ?? "n/a"} | ${daysSince(pkg.latestPublishedAt)} | ${pkg.weeklyDownloads ?? "n/a"} | ${pkg.npm} |`).join("\n") || "| n/a | n/a | n/a | n/a | n/a | n/a |"}
 
+## Outside Hedge: PyPI AI/Devtool Packages
+
+This hedge watches Python AI/devtool package freshness outside OpenClaw. It is metadata-only and does not mirror package tarballs, release files, or READMEs.
+
+| Package | Latest | Updated | Age days | Source |
+|---|---:|---|---:|---|
+${pypiHedge.map((pkg) => `| ${pkg.name} | ${pkg.latestVersion ?? "n/a"} | ${pkg.latestPublishedAt ?? "n/a"} | ${daysSince(pkg.latestPublishedAt)} | ${pkg.pypi} |`).join("\n") || "| n/a | n/a | n/a | n/a | n/a |"}
+
 ## Warnings
 
 ${warnings}
@@ -288,6 +336,13 @@ const aiDevtoolHedgeRaw = await Promise.all(
   })
 );
 
+const pypiAiDevtoolHedgeRaw = await Promise.all(
+  pypiHedgePackages.map(async (packageName) => {
+    const metadata = await fetchJson(`https://pypi.org/pypi/${encodeURIComponent(packageName)}/json`);
+    return { packageName, metadata };
+  })
+);
+
 const snapshot = {
   generatedAt: now.toISOString(),
   policy: {
@@ -301,7 +356,8 @@ const snapshot = {
     npmDownloads: compactNpmDownloads(npmDownloadsRaw),
     p1PullRequest: compactPullRequest(prRaw),
     p1IssueCandidates: compactIssueSearch(issueSearchRaw),
-    aiDevtoolHedge: compactHedgePackages(aiDevtoolHedgeRaw)
+    aiDevtoolHedge: compactHedgePackages(aiDevtoolHedgeRaw),
+    pypiAiDevtoolHedge: compactPypiHedgePackages(pypiAiDevtoolHedgeRaw)
   },
   warnings: []
 };
@@ -311,6 +367,12 @@ for (const [name, source] of Object.entries(snapshot.sources)) {
     for (const pkg of source.data) {
       if (!pkg.status.ok) {
         snapshot.warnings.push(`${name}:${pkg.name} metadata=${pkg.status.metadata} downloads=${pkg.status.downloads}`);
+      }
+    }
+  } else if (name === "pypiAiDevtoolHedge") {
+    for (const pkg of source.data) {
+      if (!pkg.status.ok) {
+        snapshot.warnings.push(`${name}:${pkg.name} metadata=${pkg.status.metadata}`);
       }
     }
   } else if (!source.ok) {

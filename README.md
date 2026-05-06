@@ -6,7 +6,7 @@ Purpose:
 
 - collect low-frequency public metadata signals,
 - generate candidate reports for Codex review,
-- track one outside-OpenClaw AI/devtool npm hedge,
+- track outside-OpenClaw AI/devtool npm and PyPI hedges,
 - avoid automatic public posting during Stage A,
 - keep runtime state self-contained for GitHub Actions.
 
@@ -15,7 +15,7 @@ Stage A rules:
 - No platform/payment/API secrets.
 - No raw private data, cookies, KYC, or payment records.
 - No full issue, README, or document mirroring.
-- No package tarball or README mirroring.
+- No package tarball, release file, or README mirroring.
 - No automatic PR, issue, comment, star, or awesome-list mutation.
 - Use public APIs and source-linked summaries only.
 

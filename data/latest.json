@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-06T14:49:20.169Z",
+  "generatedAt": "2026-05-06T14:44:48.165Z",
   "policy": {
     "publicMutation": false,
     "secretsRequired": false,
@@ -10,23 +10,23 @@
       "url": "https://api.github.com/repos/openclaw/openclaw",
       "status": 200,
       "ok": true,
-      "checkedAt": "2026-05-06T14:49:20.169Z",
+      "checkedAt": "2026-05-06T14:44:48.165Z",
       "data": {
         "full_name": "openclaw/openclaw",
         "html_url": "https://github.com/openclaw/openclaw",
         "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
-        "stargazers_count": 368958,
+        "stargazers_count": 368955,
         "forks_count": 76065,
-        "open_issues_count": 7242,
+        "open_issues_count": 7244,
         "subscribers_count": 1803,
-        "pushed_at": "2026-05-06T14:48:24Z"
+        "pushed_at": "2026-05-06T14:40:43Z"
       }
     },
     "npmSearch": {
       "url": "https://registry.npmjs.org/-/v1/search?text=openclaw&size=10",
       "status": 200,
       "ok": true,
-      "checkedAt": "2026-05-06T14:49:20.169Z",
+      "checkedAt": "2026-05-06T14:44:48.165Z",
       "data": [
         {
           "name": "openclaw",
@@ -39,7 +39,7 @@
             "npm": "https://www.npmjs.com/package/openclaw"
           },
           "score": {
-            "final": 1760.0588,
+            "final": 1760.0605,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -55,7 +55,7 @@
             "npm": "https://www.npmjs.com/package/@tencent-weixin/openclaw-weixin"
           },
           "score": {
-            "final": 365.12198,
+            "final": 365.17487,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -74,7 +74,7 @@
             "npm": "https://www.npmjs.com/package/@paperclipai/adapter-openclaw-gateway"
           },
           "score": {
-            "final": 325.93274,
+            "final": 325.9312,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -90,7 +90,7 @@
             "npm": "https://www.npmjs.com/package/@larksuite/openclaw-lark"
           },
           "score": {
-            "final": 322.8666,
+            "final": 322.853,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -106,7 +106,7 @@
             "npm": "https://www.npmjs.com/package/@ollama/openclaw-web-search"
           },
           "score": {
-            "final": 322.3531,
+            "final": 322.44046,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -122,7 +122,7 @@
             "npm": "https://www.npmjs.com/package/@tencent-weixin/openclaw-weixin-cli"
           },
           "score": {
-            "final": 288.7048,
+            "final": 288.69223,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -141,7 +141,7 @@
             "npm": "https://www.npmjs.com/package/@tloncorp/tlon-skill"
           },
           "score": {
-            "final": 287.87952,
+            "final": 287.8664,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -157,7 +157,7 @@
             "npm": "https://www.npmjs.com/package/openclaw-stepfun"
           },
           "score": {
-            "final": 264.122,
+            "final": 264.1112,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -173,7 +173,7 @@
             "npm": "https://www.npmjs.com/package/@wecom/wecom-openclaw-cli"
           },
           "score": {
-            "final": 262.07883,
+            "final": 262.07886,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -192,7 +192,7 @@
             "npm": "https://www.npmjs.com/package/@openclaw/discord"
           },
           "score": {
-            "final": 258.93503,
+            "final": 259.00317,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -206,7 +206,7 @@
       "url": "https://api.npmjs.org/downloads/point/last-week/openclaw",
       "status": 200,
       "ok": true,
-      "checkedAt": "2026-05-06T14:49:20.169Z",
+      "checkedAt": "2026-05-06T14:44:48.165Z",
       "data": {
         "downloads": 1045166,
         "start": "2026-04-29",
@@ -218,7 +218,7 @@
       "url": "https://api.github.com/repos/openclaw/openclaw/pulls/77710",
       "status": 200,
       "ok": true,
-      "checkedAt": "2026-05-06T14:49:20.169Z",
+      "checkedAt": "2026-05-06T14:44:48.165Z",
       "data": {
         "number": 77710,
         "title": "docs: clarify `/reset` is not an alias for `/new`",
@@ -226,7 +226,7 @@
         "state": "open",
         "draft": false,
         "merged": false,
-        "mergeable_state": "clean",
+        "mergeable_state": "unknown",
         "head_sha": "893e25f76e285c74b37a79cac2b579aa6936bc90",
         "updated_at": "2026-05-05T07:46:29Z",
         "labels": [
@@ -239,7 +239,7 @@
       "url": "https://api.github.com/search/issues?q=repo%3Aopenclaw%2Fopenclaw%20is%3Aissue%20is%3Aopen%20documentation%20sort%3Aupdated-desc&per_page=10",
       "status": 200,
       "ok": true,
-      "checkedAt": "2026-05-06T14:49:20.169Z",
+      "checkedAt": "2026-05-06T14:44:48.165Z",
       "data": [
         {
           "number": 78407,
@@ -332,7 +332,7 @@
       ]
     },
     "aiDevtoolHedge": {
-      "checkedAt": "2026-05-06T14:49:20.169Z",
+      "checkedAt": "2026-05-06T14:44:48.165Z",
       "data": [
         {
           "name": "ai",
@@ -415,6 +415,104 @@
           "status": {
             "metadata": 200,
             "downloads": 200,
+            "ok": true
+          }
+        }
+      ]
+    },
+    "pypiAiDevtoolHedge": {
+      "checkedAt": "2026-05-06T14:44:48.165Z",
+      "data": [
+        {
+          "name": "langchain",
+          "latestVersion": "1.2.17",
+          "latestPublishedAt": "2026-04-30T20:25:34.626317Z",
+          "summary": "Building applications with LLMs through composability",
+          "license": "MIT",
+          "homepage": null,
+          "projectUrls": {
+            "Changelog": "https://github.com/langchain-ai/langchain/releases?q=tag%3A%22langchain%3D%3D1%22",
+            "Documentation": "https://reference.langchain.com/python/langchain/langchain/",
+            "Homepage": "https://docs.langchain.com/",
+            "Issues": "https://github.com/langchain-ai/langchain/issues",
+            "Reddit": "https://www.reddit.com/r/LangChain/",
+            "Repository": "https://github.com/langchain-ai/langchain",
+            "Slack": "https://www.langchain.com/join-community",
+            "Twitter": "https://x.com/langchain_oss"
+          },
+          "pypi": "https://pypi.org/project/langchain/",
+          "status": {
+            "metadata": 200,
+            "ok": true
+          }
+        },
+        {
+          "name": "llama-index",
+          "latestVersion": "0.14.21",
+          "latestPublishedAt": "2026-04-21T00:18:48.060132Z",
+          "summary": "Interface between LLMs and your data",
+          "license": null,
+          "homepage": null,
+          "projectUrls": {
+            "Documentation": "https://docs.llamaindex.ai/en/stable/",
+            "Homepage": "https://llamaindex.ai",
+            "Repository": "https://github.com/run-llama/llama_index"
+          },
+          "pypi": "https://pypi.org/project/llama-index/",
+          "status": {
+            "metadata": 200,
+            "ok": true
+          }
+        },
+        {
+          "name": "litellm",
+          "latestVersion": "1.83.14",
+          "latestPublishedAt": "2026-04-26T03:16:10.176009Z",
+          "summary": "Library to easily interface with LLM API providers",
+          "license": null,
+          "homepage": null,
+          "projectUrls": {
+            "Documentation": "https://docs.litellm.ai",
+            "Homepage": "https://litellm.ai",
+            "Repository": "https://github.com/BerriAI/litellm"
+          },
+          "pypi": "https://pypi.org/project/litellm/",
+          "status": {
+            "metadata": 200,
+            "ok": true
+          }
+        },
+        {
+          "name": "anthropic",
+          "latestVersion": "0.99.0",
+          "latestPublishedAt": "2026-05-05T16:03:07.986901Z",
+          "summary": "The official Python library for the anthropic API",
+          "license": "MIT",
+          "homepage": null,
+          "projectUrls": {
+            "Homepage": "https://github.com/anthropics/anthropic-sdk-python",
+            "Repository": "https://github.com/anthropics/anthropic-sdk-python"
+          },
+          "pypi": "https://pypi.org/project/anthropic/",
+          "status": {
+            "metadata": 200,
+            "ok": true
+          }
+        },
+        {
+          "name": "openai",
+          "latestVersion": "2.34.0",
+          "latestPublishedAt": "2026-05-04T17:34:08.721260Z",
+          "summary": "The official Python library for the openai API",
+          "license": "Apache-2.0",
+          "homepage": null,
+          "projectUrls": {
+            "Homepage": "https://github.com/openai/openai-python",
+            "Repository": "https://github.com/openai/openai-python"
+          },
+          "pypi": "https://pypi.org/project/openai/",
+          "status": {
+            "metadata": 200,
             "ok": true
           }
         }

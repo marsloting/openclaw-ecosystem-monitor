@@ -1,21 +1,21 @@
 # Stage A Signal Report
 
-Generated: 2026-05-06T14:49:20.169Z
+Generated: 2026-05-06T14:44:48.165Z
 
 ## Runtime
 
 - GitHub Actions: best-effort cron + manual dispatch
 - Public mutation: disabled
 - Secrets: none required
-- Previous scan: 2026-05-06T11:44:19.317Z
+- Previous scan: 2026-05-06T14:41:39.995Z
 
 ## OpenClaw Repo Signal
 
 | Metric | Value |
 |---|---:|
-| Stars | 368958 |
+| Stars | 368955 |
 | Forks | 76065 |
-| Open issues | 7242 |
+| Open issues | 7244 |
 | Subscribers | 1803 |
 
 Source: https://github.com/openclaw/openclaw
@@ -29,7 +29,7 @@ Tracked PR: https://github.com/openclaw/openclaw/pull/77710
 | State | open |
 | Draft | false |
 | Merged | false |
-| Mergeable state | clean |
+| Mergeable state | unknown |
 | Head SHA | 893e25f76e285c74b37a79cac2b579aa6936bc90 |
 | Updated | 2026-05-05T07:46:29Z |
 | Labels | docs, size: XS |
@@ -79,6 +79,18 @@ This hedge watches package freshness and dependency-market movement outside Open
 | openai | 6.36.0 | 2026-05-04T17:36:28.121Z | 1 | 20585685 | https://www.npmjs.com/package/openai |
 | @anthropic-ai/sdk | 0.94.0 | 2026-05-05T16:04:04.967Z | 0 | 17930476 | https://www.npmjs.com/package/%40anthropic-ai%2Fsdk |
 | @modelcontextprotocol/sdk | 1.29.0 | 2026-03-30T16:50:42.718Z | 36 | 33911591 | https://www.npmjs.com/package/%40modelcontextprotocol%2Fsdk |
+
+## Outside Hedge: PyPI AI/Devtool Packages
+
+This hedge watches Python AI/devtool package freshness outside OpenClaw. It is metadata-only and does not mirror package tarballs, release files, or READMEs.
+
+| Package | Latest | Updated | Age days | Source |
+|---|---:|---|---:|---|
+| langchain | 1.2.17 | 2026-04-30T20:25:34.626317Z | 5 | https://pypi.org/project/langchain/ |
+| llama-index | 0.14.21 | 2026-04-21T00:18:48.060132Z | 15 | https://pypi.org/project/llama-index/ |
+| litellm | 1.83.14 | 2026-04-26T03:16:10.176009Z | 10 | https://pypi.org/project/litellm/ |
+| anthropic | 0.99.0 | 2026-05-05T16:03:07.986901Z | 0 | https://pypi.org/project/anthropic/ |
+| openai | 2.34.0 | 2026-05-04T17:34:08.721260Z | 1 | https://pypi.org/project/openai/ |
 
 ## Warnings
 
