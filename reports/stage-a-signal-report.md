@@ -1,21 +1,21 @@
 # Stage A Signal Report
 
-Generated: 2026-05-07T03:09:22.911Z
+Generated: 2026-05-07T04:07:27.017Z
 
 ## Runtime
 
 - GitHub Actions: best-effort cron + manual dispatch
 - Public mutation: disabled
 - Secrets: none required
-- Previous scan: 2026-05-06T20:02:43.633Z
+- Previous scan: 2026-05-07T03:09:22.911Z
 
 ## OpenClaw Repo Signal
 
 | Metric | Value |
 |---|---:|
-| Stars | 369114 |
-| Forks | 76136 |
-| Open issues | 7359 |
+| Stars | 369128 |
+| Forks | 76143 |
+| Open issues | 7378 |
 | Subscribers | 1804 |
 
 Source: https://github.com/openclaw/openclaw
@@ -29,13 +29,15 @@ Tracked PR: https://github.com/openclaw/openclaw/pull/77710
 | State | open |
 | Draft | false |
 | Merged | false |
-| Mergeable state | clean |
+| Mergeable state | unknown |
 | Head SHA | 893e25f76e285c74b37a79cac2b579aa6936bc90 |
 | Updated | 2026-05-07T01:39:48Z |
 | Labels | docs, size: XS |
 
 Candidate issue scan is metadata-only and for Codex review before any public action.
 
+- #76952 Docs/Feature Request: Explain Realtime Talk voices, voice-agent role, and mobile/phone bridge options (2026-05-07T04:00:59Z) https://github.com/openclaw/openclaw/issues/76952
+- #7433 Improve WhatsApp/Baileys group message reliability (2026-05-07T03:51:44Z) https://github.com/openclaw/openclaw/issues/7433
 - #78723 [Bug]: Device-token auth bypasses session ownership for outgoing media downloads (2026-05-07T02:32:21Z) https://github.com/openclaw/openclaw/issues/78723
 - #6966 Dynamic Model Switching Based on API Rate Limits (2026-05-07T02:32:10Z) https://github.com/openclaw/openclaw/issues/6966
 - #78663 Add openai-codex support for gpt-5.5-instant (2026-05-07T01:54:42Z) https://github.com/openclaw/openclaw/issues/78663
@@ -44,8 +46,6 @@ Candidate issue scan is metadata-only and for Codex review before any public act
 - #7524 Feature: groupScope option to consolidate group sessions into main (2026-05-07T00:24:35Z) https://github.com/openclaw/openclaw/issues/7524
 - #78674 [Bug]: Control UI sends null client.id/client.mode through Cloudflare tunnel (2026-05-07T00:12:26Z) https://github.com/openclaw/openclaw/issues/78674
 - #75 Linux/Windows Clawdbot Apps (2026-05-06T23:54:59Z) https://github.com/openclaw/openclaw/issues/75
-- #7575 feat: Sysbox Docker Runtime for Secure Container Isolation (Host Maintenance Required) (2026-05-06T23:30:27Z) https://github.com/openclaw/openclaw/issues/7575
-- #77434 [Bug]: /new command in webchat creates a parallel child session instead of resetting the current session (2026-05-06T22:26:57Z) https://github.com/openclaw/openclaw/issues/77434
 
 ## npm Signal
 
@@ -64,8 +64,8 @@ Package: openclaw
 - @ollama/openclaw-web-search@0.2.2 (2026-03-17T19:11:18.204Z)
 - @tencent-weixin/openclaw-weixin-cli@2.1.3 (2026-05-04T11:01:36.967Z)
 - @tloncorp/tlon-skill@0.3.5 (2026-04-10T17:06:43.292Z)
-- openclaw-stepfun@0.2.24 (2026-04-30T08:49:45.696Z)
 - @openclaw/voice-call@2026.5.6 (2026-05-06T17:24:08.266Z)
+- openclaw-stepfun@0.2.24 (2026-04-30T08:49:45.696Z)
 - @wecom/wecom-openclaw-cli@1.0.25 (2026-04-11T03:04:20.356Z)
 
 ## Outside Hedge: AI/Devtool npm Packages
@@ -88,7 +88,7 @@ This hedge watches Python AI/devtool package freshness outside OpenClaw. It is m
 |---|---:|---|---:|---|
 | langchain | 1.2.17 | 2026-04-30T20:25:34.626317Z | 6 | https://pypi.org/project/langchain/ |
 | llama-index | 0.14.21 | 2026-04-21T00:18:48.060132Z | 16 | https://pypi.org/project/llama-index/ |
-| litellm | 1.83.14 | 2026-04-26T03:16:10.176009Z | 10 | https://pypi.org/project/litellm/ |
+| litellm | 1.83.14 | 2026-04-26T03:16:10.176009Z | 11 | https://pypi.org/project/litellm/ |
 | anthropic | 0.100.0 | 2026-05-06T15:07:13.578142Z | 0 | https://pypi.org/project/anthropic/ |
 | openai | 2.35.1 | 2026-05-06T21:38:12.866531Z | 0 | https://pypi.org/project/openai/ |
 

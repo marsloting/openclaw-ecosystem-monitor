@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-07T03:09:22.911Z",
+  "generatedAt": "2026-05-07T04:07:27.017Z",
   "policy": {
     "publicMutation": false,
     "secretsRequired": false,
@@ -10,23 +10,23 @@
       "url": "https://api.github.com/repos/openclaw/openclaw",
       "status": 200,
       "ok": true,
-      "checkedAt": "2026-05-07T03:09:22.911Z",
+      "checkedAt": "2026-05-07T04:07:27.017Z",
       "data": {
         "full_name": "openclaw/openclaw",
         "html_url": "https://github.com/openclaw/openclaw",
         "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
-        "stargazers_count": 369114,
-        "forks_count": 76136,
-        "open_issues_count": 7359,
+        "stargazers_count": 369128,
+        "forks_count": 76143,
+        "open_issues_count": 7378,
         "subscribers_count": 1804,
-        "pushed_at": "2026-05-07T03:07:09Z"
+        "pushed_at": "2026-05-07T04:06:22Z"
       }
     },
     "npmSearch": {
       "url": "https://registry.npmjs.org/-/v1/search?text=openclaw&size=10",
       "status": 200,
       "ok": true,
-      "checkedAt": "2026-05-07T03:09:22.911Z",
+      "checkedAt": "2026-05-07T04:07:27.017Z",
       "data": [
         {
           "name": "openclaw",
@@ -39,7 +39,7 @@
             "npm": "https://www.npmjs.com/package/openclaw"
           },
           "score": {
-            "final": 1761.1516,
+            "final": 1761.0519,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -55,7 +55,7 @@
             "npm": "https://www.npmjs.com/package/@tencent-weixin/openclaw-weixin"
           },
           "score": {
-            "final": 364.1142,
+            "final": 363.41248,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -74,7 +74,7 @@
             "npm": "https://www.npmjs.com/package/@paperclipai/adapter-openclaw-gateway"
           },
           "score": {
-            "final": 324.14948,
+            "final": 323.90128,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -90,7 +90,7 @@
             "npm": "https://www.npmjs.com/package/@larksuite/openclaw-lark"
           },
           "score": {
-            "final": 321.1473,
+            "final": 320.90503,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -106,7 +106,7 @@
             "npm": "https://www.npmjs.com/package/@ollama/openclaw-web-search"
           },
           "score": {
-            "final": 320.6471,
+            "final": 320.7777,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -122,7 +122,7 @@
             "npm": "https://www.npmjs.com/package/@tencent-weixin/openclaw-weixin-cli"
           },
           "score": {
-            "final": 287.16617,
+            "final": 286.94922,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -141,23 +141,7 @@
             "npm": "https://www.npmjs.com/package/@tloncorp/tlon-skill"
           },
           "score": {
-            "final": 286.51678,
-            "detail": {
-              "popularity": 1,
-              "quality": 1,
-              "maintenance": 1
-            }
-          }
-        },
-        {
-          "name": "openclaw-stepfun",
-          "version": "0.2.24",
-          "date": "2026-04-30T08:49:45.696Z",
-          "links": {
-            "npm": "https://www.npmjs.com/package/openclaw-stepfun"
-          },
-          "score": {
-            "final": 262.73886,
+            "final": 286.3003,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -176,7 +160,23 @@
             "npm": "https://www.npmjs.com/package/@openclaw/voice-call"
           },
           "score": {
-            "final": 260.88623,
+            "final": 263.7676,
+            "detail": {
+              "popularity": 1,
+              "quality": 1,
+              "maintenance": 1
+            }
+          }
+        },
+        {
+          "name": "openclaw-stepfun",
+          "version": "0.2.24",
+          "date": "2026-04-30T08:49:45.696Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/openclaw-stepfun"
+          },
+          "score": {
+            "final": 262.5458,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -192,7 +192,7 @@
             "npm": "https://www.npmjs.com/package/@wecom/wecom-openclaw-cli"
           },
           "score": {
-            "final": 260.66888,
+            "final": 260.47623,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -206,7 +206,7 @@
       "url": "https://api.npmjs.org/downloads/point/last-week/openclaw",
       "status": 200,
       "ok": true,
-      "checkedAt": "2026-05-07T03:09:22.911Z",
+      "checkedAt": "2026-05-07T04:07:27.017Z",
       "data": {
         "downloads": 1045166,
         "start": "2026-04-29",
@@ -218,7 +218,7 @@
       "url": "https://api.github.com/repos/openclaw/openclaw/pulls/77710",
       "status": 200,
       "ok": true,
-      "checkedAt": "2026-05-07T03:09:22.911Z",
+      "checkedAt": "2026-05-07T04:07:27.017Z",
       "data": {
         "number": 77710,
         "title": "docs: clarify `/reset` is not an alias for `/new`",
@@ -226,7 +226,7 @@
         "state": "open",
         "draft": false,
         "merged": false,
-        "mergeable_state": "clean",
+        "mergeable_state": "unknown",
         "head_sha": "893e25f76e285c74b37a79cac2b579aa6936bc90",
         "updated_at": "2026-05-07T01:39:48Z",
         "labels": [
@@ -239,8 +239,26 @@
       "url": "https://api.github.com/search/issues?q=repo%3Aopenclaw%2Fopenclaw%20is%3Aissue%20is%3Aopen%20documentation%20sort%3Aupdated-desc&per_page=10",
       "status": 200,
       "ok": true,
-      "checkedAt": "2026-05-07T03:09:22.911Z",
+      "checkedAt": "2026-05-07T04:07:27.017Z",
       "data": [
+        {
+          "number": 76952,
+          "title": "Docs/Feature Request: Explain Realtime Talk voices, voice-agent role, and mobile/phone bridge options",
+          "html_url": "https://github.com/openclaw/openclaw/issues/76952",
+          "state": "open",
+          "updated_at": "2026-05-07T04:00:59Z",
+          "labels": []
+        },
+        {
+          "number": 7433,
+          "title": "Improve WhatsApp/Baileys group message reliability",
+          "html_url": "https://github.com/openclaw/openclaw/issues/7433",
+          "state": "open",
+          "updated_at": "2026-05-07T03:51:44Z",
+          "labels": [
+            "enhancement"
+          ]
+        },
         {
           "number": 78723,
           "title": "[Bug]: Device-token auth bypasses session ownership for outgoing media downloads",
@@ -318,29 +336,11 @@
             "enhancement",
             "help wanted"
           ]
-        },
-        {
-          "number": 7575,
-          "title": "feat: Sysbox Docker Runtime for Secure Container Isolation (Host Maintenance Required)",
-          "html_url": "https://github.com/openclaw/openclaw/issues/7575",
-          "state": "open",
-          "updated_at": "2026-05-06T23:30:27Z",
-          "labels": [
-            "enhancement"
-          ]
-        },
-        {
-          "number": 77434,
-          "title": "[Bug]: /new command in webchat creates a parallel child session instead of resetting the current session",
-          "html_url": "https://github.com/openclaw/openclaw/issues/77434",
-          "state": "open",
-          "updated_at": "2026-05-06T22:26:57Z",
-          "labels": []
         }
       ]
     },
     "aiDevtoolHedge": {
-      "checkedAt": "2026-05-07T03:09:22.911Z",
+      "checkedAt": "2026-05-07T04:07:27.017Z",
       "data": [
         {
           "name": "ai",
@@ -429,7 +429,7 @@
       ]
     },
     "pypiAiDevtoolHedge": {
-      "checkedAt": "2026-05-07T03:09:22.911Z",
+      "checkedAt": "2026-05-07T04:07:27.017Z",
       "data": [
         {
           "name": "langchain",
