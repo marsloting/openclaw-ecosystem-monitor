@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-07T04:07:27.017Z",
+  "generatedAt": "2026-05-07T08:48:35.810Z",
   "policy": {
     "publicMutation": false,
     "secretsRequired": false,
@@ -10,23 +10,23 @@
       "url": "https://api.github.com/repos/openclaw/openclaw",
       "status": 200,
       "ok": true,
-      "checkedAt": "2026-05-07T04:07:27.017Z",
+      "checkedAt": "2026-05-07T08:48:35.810Z",
       "data": {
         "full_name": "openclaw/openclaw",
         "html_url": "https://github.com/openclaw/openclaw",
         "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
-        "stargazers_count": 369128,
-        "forks_count": 76143,
-        "open_issues_count": 7378,
-        "subscribers_count": 1804,
-        "pushed_at": "2026-05-07T04:06:22Z"
+        "stargazers_count": 369226,
+        "forks_count": 76174,
+        "open_issues_count": 7369,
+        "subscribers_count": 1803,
+        "pushed_at": "2026-05-07T08:43:17Z"
       }
     },
     "npmSearch": {
       "url": "https://registry.npmjs.org/-/v1/search?text=openclaw&size=10",
       "status": 200,
       "ok": true,
-      "checkedAt": "2026-05-07T04:07:27.017Z",
+      "checkedAt": "2026-05-07T08:48:35.810Z",
       "data": [
         {
           "name": "openclaw",
@@ -39,7 +39,7 @@
             "npm": "https://www.npmjs.com/package/openclaw"
           },
           "score": {
-            "final": 1761.0519,
+            "final": 1761.5175,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -55,7 +55,7 @@
             "npm": "https://www.npmjs.com/package/@tencent-weixin/openclaw-weixin"
           },
           "score": {
-            "final": 363.41248,
+            "final": 362.5789,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -74,7 +74,7 @@
             "npm": "https://www.npmjs.com/package/@paperclipai/adapter-openclaw-gateway"
           },
           "score": {
-            "final": 323.90128,
+            "final": 321.3434,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -90,7 +90,7 @@
             "npm": "https://www.npmjs.com/package/@larksuite/openclaw-lark"
           },
           "score": {
-            "final": 320.90503,
+            "final": 321.03748,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -106,7 +106,7 @@
             "npm": "https://www.npmjs.com/package/@ollama/openclaw-web-search"
           },
           "score": {
-            "final": 320.7777,
+            "final": 319.85257,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -122,7 +122,7 @@
             "npm": "https://www.npmjs.com/package/@tencent-weixin/openclaw-weixin-cli"
           },
           "score": {
-            "final": 286.94922,
+            "final": 287.18158,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -141,26 +141,7 @@
             "npm": "https://www.npmjs.com/package/@tloncorp/tlon-skill"
           },
           "score": {
-            "final": 286.3003,
-            "detail": {
-              "popularity": 1,
-              "quality": 1,
-              "maintenance": 1
-            }
-          }
-        },
-        {
-          "name": "@openclaw/voice-call",
-          "version": "2026.5.6",
-          "date": "2026-05-06T17:24:08.266Z",
-          "links": {
-            "homepage": "https://github.com/openclaw/openclaw#readme",
-            "repository": "git+https://github.com/openclaw/openclaw.git",
-            "bugs": "https://github.com/openclaw/openclaw/issues",
-            "npm": "https://www.npmjs.com/package/@openclaw/voice-call"
-          },
-          "score": {
-            "final": 263.7676,
+            "final": 285.60577,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -176,7 +157,26 @@
             "npm": "https://www.npmjs.com/package/openclaw-stepfun"
           },
           "score": {
-            "final": 262.5458,
+            "final": 262.9899,
+            "detail": {
+              "popularity": 1,
+              "quality": 1,
+              "maintenance": 1
+            }
+          }
+        },
+        {
+          "name": "@openclaw/brave-plugin",
+          "version": "2026.5.6",
+          "date": "2026-05-06T17:23:56.190Z",
+          "links": {
+            "homepage": "https://github.com/openclaw/openclaw#readme",
+            "repository": "git+https://github.com/openclaw/openclaw.git",
+            "bugs": "https://github.com/openclaw/openclaw/issues",
+            "npm": "https://www.npmjs.com/package/@openclaw/brave-plugin"
+          },
+          "score": {
+            "final": 260.84943,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -192,7 +192,7 @@
             "npm": "https://www.npmjs.com/package/@wecom/wecom-openclaw-cli"
           },
           "score": {
-            "final": 260.47623,
+            "final": 259.70123,
             "detail": {
               "popularity": 1,
               "quality": 1,
@@ -206,7 +206,7 @@
       "url": "https://api.npmjs.org/downloads/point/last-week/openclaw",
       "status": 200,
       "ok": true,
-      "checkedAt": "2026-05-07T04:07:27.017Z",
+      "checkedAt": "2026-05-07T08:48:35.810Z",
       "data": {
         "downloads": 1045166,
         "start": "2026-04-29",
@@ -218,7 +218,7 @@
       "url": "https://api.github.com/repos/openclaw/openclaw/pulls/77710",
       "status": 200,
       "ok": true,
-      "checkedAt": "2026-05-07T04:07:27.017Z",
+      "checkedAt": "2026-05-07T08:48:35.810Z",
       "data": {
         "number": 77710,
         "title": "docs: clarify `/reset` is not an alias for `/new`",
@@ -239,8 +239,68 @@
       "url": "https://api.github.com/search/issues?q=repo%3Aopenclaw%2Fopenclaw%20is%3Aissue%20is%3Aopen%20documentation%20sort%3Aupdated-desc&per_page=10",
       "status": 200,
       "ok": true,
-      "checkedAt": "2026-05-07T04:07:27.017Z",
+      "checkedAt": "2026-05-07T08:48:35.810Z",
       "data": [
+        {
+          "number": 78811,
+          "title": "RFC: stable embeddable core entry point (@openclaw/core)",
+          "html_url": "https://github.com/openclaw/openclaw/issues/78811",
+          "state": "open",
+          "updated_at": "2026-05-07T08:24:55Z",
+          "labels": []
+        },
+        {
+          "number": 78846,
+          "title": "[Bug]: [object Object][object Object]... in agents messages and in memory with mistral thinking",
+          "html_url": "https://github.com/openclaw/openclaw/issues/78846",
+          "state": "open",
+          "updated_at": "2026-05-07T08:06:36Z",
+          "labels": [
+            "bug",
+            "bug:behavior"
+          ]
+        },
+        {
+          "number": 78843,
+          "title": "[Bug]: Provider catalog headers not propagated to model object in wrapStreamFn",
+          "html_url": "https://github.com/openclaw/openclaw/issues/78843",
+          "state": "open",
+          "updated_at": "2026-05-07T07:57:49Z",
+          "labels": [
+            "bug",
+            "bug:behavior"
+          ]
+        },
+        {
+          "number": 6625,
+          "title": "Feature: Graceful sub-agent timeout (pre-timeout warning)",
+          "html_url": "https://github.com/openclaw/openclaw/issues/6625",
+          "state": "open",
+          "updated_at": "2026-05-07T06:53:31Z",
+          "labels": [
+            "enhancement"
+          ]
+        },
+        {
+          "number": 7648,
+          "title": "Feature Request: Option to disable auto-scroll in Control UI / WebChat",
+          "html_url": "https://github.com/openclaw/openclaw/issues/7648",
+          "state": "open",
+          "updated_at": "2026-05-07T06:25:00Z",
+          "labels": [
+            "enhancement"
+          ]
+        },
+        {
+          "number": 7669,
+          "title": "[Feature] Re-enable dev channel distribution tag for npm releases",
+          "html_url": "https://github.com/openclaw/openclaw/issues/7669",
+          "state": "open",
+          "updated_at": "2026-05-07T05:38:34Z",
+          "labels": [
+            "enhancement"
+          ]
+        },
         {
           "number": 76952,
           "title": "Docs/Feature Request: Explain Realtime Talk voices, voice-agent role, and mobile/phone bridge options",
@@ -279,68 +339,11 @@
           "labels": [
             "enhancement"
           ]
-        },
-        {
-          "number": 78663,
-          "title": "Add openai-codex support for gpt-5.5-instant",
-          "html_url": "https://github.com/openclaw/openclaw/issues/78663",
-          "state": "open",
-          "updated_at": "2026-05-07T01:54:42Z",
-          "labels": []
-        },
-        {
-          "number": 6731,
-          "title": "[Feature]: safe/unsafe ClawdBot",
-          "html_url": "https://github.com/openclaw/openclaw/issues/6731",
-          "state": "open",
-          "updated_at": "2026-05-07T01:52:27Z",
-          "labels": [
-            "enhancement"
-          ]
-        },
-        {
-          "number": 9865,
-          "title": "Feature Request: Batch API support for background tasks",
-          "html_url": "https://github.com/openclaw/openclaw/issues/9865",
-          "state": "open",
-          "updated_at": "2026-05-07T00:30:12Z",
-          "labels": [
-            "enhancement"
-          ]
-        },
-        {
-          "number": 7524,
-          "title": "Feature: groupScope option to consolidate group sessions into main",
-          "html_url": "https://github.com/openclaw/openclaw/issues/7524",
-          "state": "open",
-          "updated_at": "2026-05-07T00:24:35Z",
-          "labels": [
-            "enhancement"
-          ]
-        },
-        {
-          "number": 78674,
-          "title": "[Bug]: Control UI sends null client.id/client.mode through Cloudflare tunnel",
-          "html_url": "https://github.com/openclaw/openclaw/issues/78674",
-          "state": "open",
-          "updated_at": "2026-05-07T00:12:26Z",
-          "labels": []
-        },
-        {
-          "number": 75,
-          "title": "Linux/Windows Clawdbot Apps",
-          "html_url": "https://github.com/openclaw/openclaw/issues/75",
-          "state": "open",
-          "updated_at": "2026-05-06T23:54:59Z",
-          "labels": [
-            "enhancement",
-            "help wanted"
-          ]
         }
       ]
     },
     "aiDevtoolHedge": {
-      "checkedAt": "2026-05-07T04:07:27.017Z",
+      "checkedAt": "2026-05-07T08:48:35.810Z",
       "data": [
         {
           "name": "ai",
@@ -351,8 +354,8 @@
           "homepage": "https://ai-sdk.dev/docs",
           "repository": "git+https://github.com/vercel/ai.git",
           "npm": "https://www.npmjs.com/package/ai",
-          "weeklyDownloads": 11906448,
-          "downloadsWindow": "2026-04-29 to 2026-05-05",
+          "weeklyDownloads": 11926851,
+          "downloadsWindow": "2026-04-30 to 2026-05-06",
           "status": {
             "metadata": 200,
             "downloads": 200,
@@ -368,8 +371,8 @@
           "homepage": "https://ai-sdk.dev/docs",
           "repository": "git+https://github.com/vercel/ai.git",
           "npm": "https://www.npmjs.com/package/%40ai-sdk%2Fopenai",
-          "weeklyDownloads": 5774549,
-          "downloadsWindow": "2026-04-29 to 2026-05-05",
+          "weeklyDownloads": 5792713,
+          "downloadsWindow": "2026-04-30 to 2026-05-06",
           "status": {
             "metadata": 200,
             "downloads": 200,
@@ -385,8 +388,8 @@
           "homepage": "https://github.com/openai/openai-node#readme",
           "repository": "git+https://github.com/openai/openai-node.git",
           "npm": "https://www.npmjs.com/package/openai",
-          "weeklyDownloads": 20585685,
-          "downloadsWindow": "2026-04-29 to 2026-05-05",
+          "weeklyDownloads": 20467023,
+          "downloadsWindow": "2026-04-30 to 2026-05-06",
           "status": {
             "metadata": 200,
             "downloads": 200,
@@ -418,8 +421,8 @@
           "homepage": "https://modelcontextprotocol.io",
           "repository": "git+https://github.com/modelcontextprotocol/typescript-sdk.git",
           "npm": "https://www.npmjs.com/package/%40modelcontextprotocol%2Fsdk",
-          "weeklyDownloads": 33911591,
-          "downloadsWindow": "2026-04-29 to 2026-05-05",
+          "weeklyDownloads": 34021288,
+          "downloadsWindow": "2026-04-30 to 2026-05-06",
           "status": {
             "metadata": 200,
             "downloads": 200,
@@ -429,7 +432,7 @@
       ]
     },
     "pypiAiDevtoolHedge": {
-      "checkedAt": "2026-05-07T04:07:27.017Z",
+      "checkedAt": "2026-05-07T08:48:35.810Z",
       "data": [
         {
           "name": "langchain",
