@@ -1,22 +1,22 @@
 # Stage A Signal Report
 
-Generated: 2026-05-06T20:02:43.633Z
+Generated: 2026-05-07T03:09:22.911Z
 
 ## Runtime
 
 - GitHub Actions: best-effort cron + manual dispatch
 - Public mutation: disabled
 - Secrets: none required
-- Previous scan: 2026-05-06T14:51:17.559Z
+- Previous scan: 2026-05-06T20:02:43.633Z
 
 ## OpenClaw Repo Signal
 
 | Metric | Value |
 |---|---:|
-| Stars | 369025 |
-| Forks | 76106 |
-| Open issues | 7313 |
-| Subscribers | 1803 |
+| Stars | 369114 |
+| Forks | 76136 |
+| Open issues | 7359 |
+| Subscribers | 1804 |
 
 Source: https://github.com/openclaw/openclaw
 
@@ -29,23 +29,23 @@ Tracked PR: https://github.com/openclaw/openclaw/pull/77710
 | State | open |
 | Draft | false |
 | Merged | false |
-| Mergeable state | unknown |
+| Mergeable state | clean |
 | Head SHA | 893e25f76e285c74b37a79cac2b579aa6936bc90 |
-| Updated | 2026-05-05T07:46:29Z |
+| Updated | 2026-05-07T01:39:48Z |
 | Labels | docs, size: XS |
 
 Candidate issue scan is metadata-only and for Codex review before any public action.
 
-- #78593 [Bug]: WhatsApp channel unavailable after upgrade to 2026.5.5 until @openclaw/whatsapp is manually installed #1 (2026-05-06T19:20:08Z) https://github.com/openclaw/openclaw/issues/78593
-- #78407 [Bug]: openclaw doctor --fix rewrites openai-codex/* model refs to openai/* on 2026.5.4 → 2026.5.5 update, locking out ChatGPT-OAuth users (2026-05-06T19:12:22Z) https://github.com/openclaw/openclaw/issues/78407
-- #78222 OpenClaw 2026.5.4 Gateway status/health inconsistency on WSL2: diagnostics report ok/listener, external checks show no listener and HTTP 000 (2026-05-06T19:01:37Z) https://github.com/openclaw/openclaw/issues/78222
-- #9607 Himalaya skill: missing email formatting philosophy and incorrect command syntax (2026-05-06T18:47:55Z) https://github.com/openclaw/openclaw/issues/9607
-- #78495 docs: MEDIA: directive silently ignored when wrapped in markdown formatting (2026-05-06T18:43:38Z) https://github.com/openclaw/openclaw/issues/78495
-- #9443 Request: Prebuilt Android APK releases (2026-05-06T17:37:58Z) https://github.com/openclaw/openclaw/issues/9443
-- #78538 [Docs]: `secrets apply --from <plan.json>` accepts `providerUpserts` and `providerDeletes`, but `docs/gateway/secrets-plan-contract.md` only documents `targets` (2026-05-06T16:54:43Z) https://github.com/openclaw/openclaw/issues/78538
-- #73323 [Bug]: Gateway runtime degradation: pricing fetch 60s timeouts, Telegram polling stalls, slow RPC — chronic across 4.23/4.25/4.26 on Windows 11 + Node 24 (2026-05-06T16:43:14Z) https://github.com/openclaw/openclaw/issues/73323
-- #9658 Feature Request: Support streaming or file-based tool arguments to bypass JSON serialization limits (2026-05-06T16:42:04Z) https://github.com/openclaw/openclaw/issues/9658
-- #8285 Feature request: Auto-send intent/acknowledgment text message before agent processing (2026-05-06T16:17:15Z) https://github.com/openclaw/openclaw/issues/8285
+- #78723 [Bug]: Device-token auth bypasses session ownership for outgoing media downloads (2026-05-07T02:32:21Z) https://github.com/openclaw/openclaw/issues/78723
+- #6966 Dynamic Model Switching Based on API Rate Limits (2026-05-07T02:32:10Z) https://github.com/openclaw/openclaw/issues/6966
+- #78663 Add openai-codex support for gpt-5.5-instant (2026-05-07T01:54:42Z) https://github.com/openclaw/openclaw/issues/78663
+- #6731 [Feature]: safe/unsafe ClawdBot (2026-05-07T01:52:27Z) https://github.com/openclaw/openclaw/issues/6731
+- #9865 Feature Request: Batch API support for background tasks (2026-05-07T00:30:12Z) https://github.com/openclaw/openclaw/issues/9865
+- #7524 Feature: groupScope option to consolidate group sessions into main (2026-05-07T00:24:35Z) https://github.com/openclaw/openclaw/issues/7524
+- #78674 [Bug]: Control UI sends null client.id/client.mode through Cloudflare tunnel (2026-05-07T00:12:26Z) https://github.com/openclaw/openclaw/issues/78674
+- #75 Linux/Windows Clawdbot Apps (2026-05-06T23:54:59Z) https://github.com/openclaw/openclaw/issues/75
+- #7575 feat: Sysbox Docker Runtime for Secure Container Isolation (Host Maintenance Required) (2026-05-06T23:30:27Z) https://github.com/openclaw/openclaw/issues/7575
+- #77434 [Bug]: /new command in webchat creates a parallel child session instead of resetting the current session (2026-05-06T22:26:57Z) https://github.com/openclaw/openclaw/issues/77434
 
 ## npm Signal
 
@@ -65,8 +65,8 @@ Package: openclaw
 - @tencent-weixin/openclaw-weixin-cli@2.1.3 (2026-05-04T11:01:36.967Z)
 - @tloncorp/tlon-skill@0.3.5 (2026-04-10T17:06:43.292Z)
 - openclaw-stepfun@0.2.24 (2026-04-30T08:49:45.696Z)
+- @openclaw/voice-call@2026.5.6 (2026-05-06T17:24:08.266Z)
 - @wecom/wecom-openclaw-cli@1.0.25 (2026-04-11T03:04:20.356Z)
-- @openclaw/discord@2026.5.6 (2026-05-06T17:24:05.389Z)
 
 ## Outside Hedge: AI/Devtool npm Packages
 
@@ -86,11 +86,11 @@ This hedge watches Python AI/devtool package freshness outside OpenClaw. It is m
 
 | Package | Latest | Updated | Age days | Source |
 |---|---:|---|---:|---|
-| langchain | 1.2.17 | 2026-04-30T20:25:34.626317Z | 5 | https://pypi.org/project/langchain/ |
-| llama-index | 0.14.21 | 2026-04-21T00:18:48.060132Z | 15 | https://pypi.org/project/llama-index/ |
+| langchain | 1.2.17 | 2026-04-30T20:25:34.626317Z | 6 | https://pypi.org/project/langchain/ |
+| llama-index | 0.14.21 | 2026-04-21T00:18:48.060132Z | 16 | https://pypi.org/project/llama-index/ |
 | litellm | 1.83.14 | 2026-04-26T03:16:10.176009Z | 10 | https://pypi.org/project/litellm/ |
 | anthropic | 0.100.0 | 2026-05-06T15:07:13.578142Z | 0 | https://pypi.org/project/anthropic/ |
-| openai | 2.35.0 | 2026-05-06T16:36:55.166157Z | 0 | https://pypi.org/project/openai/ |
+| openai | 2.35.1 | 2026-05-06T21:38:12.866531Z | 0 | https://pypi.org/project/openai/ |
 
 ## Warnings
 
