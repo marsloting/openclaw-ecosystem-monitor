@@ -33,8 +33,9 @@ function labelsOf(item) {
 }
 
 async function collectPr(number) {
-  const [pr, comments] = await Promise.all([
+  const [pr, issue, comments] = await Promise.all([
     fetchJson(`https://api.github.com/repos/${repo}/pulls/${number}`),
+    fetchJson(`https://api.github.com/repos/${repo}/issues/${number}`),
     fetchJson(`https://api.github.com/repos/${repo}/issues/${number}/comments?per_page=100`)
   ]);
 
@@ -45,8 +46,9 @@ async function collectPr(number) {
 
   return {
     number,
-    ok: pr.ok && comments.ok,
+    ok: (pr.ok || issue.ok) && comments.ok,
     pr,
+    issue,
     comments,
     maintainerComments
   };
@@ -63,19 +65,22 @@ async function collectRecentIssues() {
 }
 
 function renderPrLine(item) {
-  const pr = item.pr.body || {};
+  const pr = item.pr.ok ? item.pr.body || {} : {};
+  const issue = item.issue.ok ? item.issue.body || {} : {};
+  const metadata = item.pr.ok ? pr : issue;
+  const merged = Boolean(pr.merged);
   const signal = item.maintainerComments.length > 0 || pr.merged
     ? "S1 candidate"
     : "S0";
   return [
-    `- #${item.number} ${pr.title || "unknown"}`,
-    `state=${pr.state || "unknown"}`,
-    `merged=${Boolean(pr.merged)}`,
-    `updated=${pr.updated_at || "unknown"}`,
-    `labels=${labelsOf(pr)}`,
+    `- #${item.number} ${metadata.title || "unknown"}`,
+    `state=${metadata.state || "unknown"}`,
+    `merged=${merged}`,
+    `updated=${metadata.updated_at || "unknown"}`,
+    `labels=${labelsOf(metadata)}`,
     `maintainer_comments=${item.maintainerComments.length}`,
     `signal=${signal}`,
-    pr.html_url || ""
+    metadata.html_url || ""
   ].join(" | ");
 }
 
