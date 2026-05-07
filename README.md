@@ -1,16 +1,15 @@
-# OpenClaw Ecosystem Monitor
+# OpenClaw Weekly Monitor
 
-Private Stage A runtime for the `wangjieweb3-design` public builder persona.
+Private v3.0 runtime for the `wangjieweb3-design` public builder persona.
 
 Purpose:
 
-- collect low-frequency public metadata signals,
-- generate candidate reports for Codex review,
-- track outside-OpenClaw AI/devtool npm and PyPI hedges,
-- avoid automatic public posting during Stage A,
-- keep runtime state self-contained for GitHub Actions.
+- keep a weekly public-metadata pulse on OpenClaw exploration #1,
+- print a source-linked Actions report for Codex review,
+- avoid automatic public posting or repository mutation,
+- leave PA-facing portfolio state in Notion instead of private repo files.
 
-Stage A rules:
+Rules:
 
 - No platform/payment/API secrets.
 - No raw private data, cookies, KYC, or payment records.
@@ -21,10 +20,7 @@ Stage A rules:
 
 Runtime:
 
-- GitHub Actions cloud for P1/P5 best-effort cron with backfill.
-- v2.5.1 cadence: 4h cron while `p95_runtime_min <= 8`; ledger guard rail degrades the target to 6h if runtime grows.
-- Source registry: `config/source_quality.yaml` is the executable source list.
-- Status ledger: `data/stage-a-ledger.json` tracks active PR cap, PR queue, source tiers, runtime projection, and latest material event.
-- Commit policy: scan output is committed only when `data/material-delta.flag` exists after a material signal signature change.
-- PR queue policy: FIFO queue, max two active public PRs, 168h stale threshold, no maintainer nudge spam.
-- OpenClaw computer SSH track is separate for P6 runtime.
+- GitHub Actions runs weekly and reads only public OpenClaw metadata.
+- Codex heartbeat runs daily and writes portfolio state to Notion.
+- Exploration #1 is `OpenClaw ecosystem flywheel`, duration 6 months, spend cap USD 5.
+- This repo intentionally has no private JSON ledger, source tier registry, PR holding list, or generated-output commit loop.

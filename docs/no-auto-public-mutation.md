@@ -1,6 +1,6 @@
 # No Auto Public Mutation
 
-Stage A scheduled jobs may generate candidate reports only.
+Scheduled jobs may inspect public metadata and print source-linked reports only.
 
 They must not automatically:
 
@@ -8,9 +8,8 @@ They must not automatically:
 - open issues,
 - post comments,
 - star repositories,
-- submit awesome-list pull requests,
-- publish ClawHub listings,
+- submit directory or awesome-list pull requests,
+- publish hosted listings or distribution pages,
 - send payment or donation links.
 
-Any public action requires Codex review and an explicit execution step.
-
+Any public action requires a separate Codex execution step with the exploration persona boundary checked first.

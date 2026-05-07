@@ -1,52 +1,26 @@
-name: E0+ Signal Scan
+name: OpenClaw Weekly Monitor
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "17 */4 * * *"
+    - cron: "17 2 * * 1"
 
 permissions:
   contents: read
 
 concurrency:
-  group: e0-plus-signal-scan
+  group: openclaw-weekly-monitor
   cancel-in-progress: false
 
 jobs:
   scan:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
-      - name: Checkout with GITHUB_TOKEN
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
-        run: |
-          git init .
-          git remote add origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
-          git fetch --depth=1 origin "${GITHUB_REF_NAME}"
-          git checkout FETCH_HEAD
-          git switch -C "${GITHUB_REF_NAME}"
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - name: Run public metadata scan
+      - name: Run weekly OpenClaw monitor
         run: |
           node --version
           npm run check
-          npm run scan
-
-      - name: Commit material scan output
-        run: |
-          git config user.name "wangjieweb3-design"
-          git config user.email "wangjieweb3@gmail.com"
-          if [ ! -f data/material-delta.flag ]; then
-            echo "No material scan delta; ledger/report changes are intentionally not committed."
-            exit 0
-          fi
-          rm -f data/material-delta.flag
-          git add data reports
-          if git diff --cached --quiet; then
-            echo "No scan output changes."
-          else
-            git commit -m "chore: update material signal report [skip ci]"
-            git push origin "HEAD:${GITHUB_REF_NAME}"
-          fi
+          npm run openclaw:weekly

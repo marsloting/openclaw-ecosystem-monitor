@@ -4,9 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "scan": "node scripts/e0-plus-scan.mjs",
-    "queue:check": "node scripts/p1b-queue.mjs",
-    "check": "node --check scripts/e0-plus-scan.mjs && node --check scripts/p1b-queue.mjs"
+    "openclaw:weekly": "node scripts/openclaw-weekly-scan.mjs",
+    "scan": "npm run openclaw:weekly",
+    "check": "node --check scripts/openclaw-weekly-scan.mjs"
   },
   "engines": {
     "node": ">=20"
