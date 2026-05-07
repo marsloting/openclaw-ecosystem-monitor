@@ -1,224 +1,58 @@
 {
-  "generatedAt": "2026-05-07T08:48:35.810Z",
+  "version": "v2.5.1",
+  "generatedAt": "2026-05-07T10:11:14.632Z",
   "policy": {
     "publicMutation": false,
     "secretsRequired": false,
-    "collection": "metadata_and_source_links_only"
+    "collection": "metadata_and_source_links_only",
+    "commit": "material_delta_only"
+  },
+  "registry": {
+    "version": "v2.5.1",
+    "source_pool_max": 50,
+    "hot_min": 10,
+    "hot_max": 15,
+    "warm_min": 15,
+    "warm_max": 20,
+    "cold_reserve_max": 35
+  },
+  "registry_check": {
+    "counts": {
+      "hot": 12,
+      "warm": 4,
+      "cold": 1
+    },
+    "total": 17,
+    "warnings": []
   },
   "sources": {
-    "openclawRepo": {
-      "url": "https://api.github.com/repos/openclaw/openclaw",
-      "status": 200,
+    "github_openclaw_repo": {
+      "id": "github_openclaw_repo",
+      "type": "github_repo",
+      "tier": "hot",
       "ok": true,
-      "checkedAt": "2026-05-07T08:48:35.810Z",
+      "status": 200,
+      "elapsed_ms": 392,
+      "checkedAt": "2026-05-07T10:11:14.632Z",
       "data": {
         "full_name": "openclaw/openclaw",
         "html_url": "https://github.com/openclaw/openclaw",
         "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
-        "stargazers_count": 369226,
-        "forks_count": 76174,
-        "open_issues_count": 7369,
+        "stargazers_count": 369246,
+        "forks_count": 76188,
+        "open_issues_count": 7384,
         "subscribers_count": 1803,
-        "pushed_at": "2026-05-07T08:43:17Z"
+        "pushed_at": "2026-05-07T10:10:23Z"
       }
     },
-    "npmSearch": {
-      "url": "https://registry.npmjs.org/-/v1/search?text=openclaw&size=10",
-      "status": 200,
+    "p1_pr_77710": {
+      "id": "p1_pr_77710",
+      "type": "github_pr",
+      "tier": "hot",
       "ok": true,
-      "checkedAt": "2026-05-07T08:48:35.810Z",
-      "data": [
-        {
-          "name": "openclaw",
-          "version": "2026.5.6",
-          "date": "2026-05-06T17:33:28.172Z",
-          "links": {
-            "homepage": "https://github.com/openclaw/openclaw#readme",
-            "repository": "git+https://github.com/openclaw/openclaw.git",
-            "bugs": "https://github.com/openclaw/openclaw/issues",
-            "npm": "https://www.npmjs.com/package/openclaw"
-          },
-          "score": {
-            "final": 1761.5175,
-            "detail": {
-              "popularity": 1,
-              "quality": 1,
-              "maintenance": 1
-            }
-          }
-        },
-        {
-          "name": "@tencent-weixin/openclaw-weixin",
-          "version": "2.4.1",
-          "date": "2026-05-04T11:02:05.215Z",
-          "links": {
-            "npm": "https://www.npmjs.com/package/@tencent-weixin/openclaw-weixin"
-          },
-          "score": {
-            "final": 362.5789,
-            "detail": {
-              "popularity": 1,
-              "quality": 1,
-              "maintenance": 1
-            }
-          }
-        },
-        {
-          "name": "@paperclipai/adapter-openclaw-gateway",
-          "version": "2026.428.0",
-          "date": "2026-04-28T22:54:24.929Z",
-          "links": {
-            "homepage": "https://github.com/paperclipai/paperclip",
-            "repository": "git+https://github.com/paperclipai/paperclip.git",
-            "bugs": "https://github.com/paperclipai/paperclip/issues",
-            "npm": "https://www.npmjs.com/package/@paperclipai/adapter-openclaw-gateway"
-          },
-          "score": {
-            "final": 321.3434,
-            "detail": {
-              "popularity": 1,
-              "quality": 1,
-              "maintenance": 1
-            }
-          }
-        },
-        {
-          "name": "@larksuite/openclaw-lark",
-          "version": "2026.4.10",
-          "date": "2026-04-30T09:35:12.325Z",
-          "links": {
-            "npm": "https://www.npmjs.com/package/@larksuite/openclaw-lark"
-          },
-          "score": {
-            "final": 321.03748,
-            "detail": {
-              "popularity": 1,
-              "quality": 1,
-              "maintenance": 1
-            }
-          }
-        },
-        {
-          "name": "@ollama/openclaw-web-search",
-          "version": "0.2.2",
-          "date": "2026-03-17T19:11:18.204Z",
-          "links": {
-            "npm": "https://www.npmjs.com/package/@ollama/openclaw-web-search"
-          },
-          "score": {
-            "final": 319.85257,
-            "detail": {
-              "popularity": 1,
-              "quality": 1,
-              "maintenance": 1
-            }
-          }
-        },
-        {
-          "name": "@tencent-weixin/openclaw-weixin-cli",
-          "version": "2.1.3",
-          "date": "2026-05-04T11:01:36.967Z",
-          "links": {
-            "npm": "https://www.npmjs.com/package/@tencent-weixin/openclaw-weixin-cli"
-          },
-          "score": {
-            "final": 287.18158,
-            "detail": {
-              "popularity": 1,
-              "quality": 1,
-              "maintenance": 1
-            }
-          }
-        },
-        {
-          "name": "@tloncorp/tlon-skill",
-          "version": "0.3.5",
-          "date": "2026-04-10T17:06:43.292Z",
-          "links": {
-            "homepage": "https://github.com/tloncorp/tlon-skill#readme",
-            "repository": "git+https://github.com/tloncorp/tlon-skill.git",
-            "bugs": "https://github.com/tloncorp/tlon-skill/issues",
-            "npm": "https://www.npmjs.com/package/@tloncorp/tlon-skill"
-          },
-          "score": {
-            "final": 285.60577,
-            "detail": {
-              "popularity": 1,
-              "quality": 1,
-              "maintenance": 1
-            }
-          }
-        },
-        {
-          "name": "openclaw-stepfun",
-          "version": "0.2.24",
-          "date": "2026-04-30T08:49:45.696Z",
-          "links": {
-            "npm": "https://www.npmjs.com/package/openclaw-stepfun"
-          },
-          "score": {
-            "final": 262.9899,
-            "detail": {
-              "popularity": 1,
-              "quality": 1,
-              "maintenance": 1
-            }
-          }
-        },
-        {
-          "name": "@openclaw/brave-plugin",
-          "version": "2026.5.6",
-          "date": "2026-05-06T17:23:56.190Z",
-          "links": {
-            "homepage": "https://github.com/openclaw/openclaw#readme",
-            "repository": "git+https://github.com/openclaw/openclaw.git",
-            "bugs": "https://github.com/openclaw/openclaw/issues",
-            "npm": "https://www.npmjs.com/package/@openclaw/brave-plugin"
-          },
-          "score": {
-            "final": 260.84943,
-            "detail": {
-              "popularity": 1,
-              "quality": 1,
-              "maintenance": 1
-            }
-          }
-        },
-        {
-          "name": "@wecom/wecom-openclaw-cli",
-          "version": "1.0.25",
-          "date": "2026-04-11T03:04:20.356Z",
-          "links": {
-            "npm": "https://www.npmjs.com/package/@wecom/wecom-openclaw-cli"
-          },
-          "score": {
-            "final": 259.70123,
-            "detail": {
-              "popularity": 1,
-              "quality": 1,
-              "maintenance": 1
-            }
-          }
-        }
-      ]
-    },
-    "npmDownloads": {
-      "url": "https://api.npmjs.org/downloads/point/last-week/openclaw",
       "status": 200,
-      "ok": true,
-      "checkedAt": "2026-05-07T08:48:35.810Z",
-      "data": {
-        "downloads": 1045166,
-        "start": "2026-04-29",
-        "end": "2026-05-05",
-        "package": "openclaw"
-      }
-    },
-    "p1PullRequest": {
-      "url": "https://api.github.com/repos/openclaw/openclaw/pulls/77710",
-      "status": 200,
-      "ok": true,
-      "checkedAt": "2026-05-07T08:48:35.810Z",
+      "elapsed_ms": 367,
+      "checkedAt": "2026-05-07T10:11:14.632Z",
       "data": {
         "number": 77710,
         "title": "docs: clarify `/reset` is not an alias for `/new`",
@@ -235,12 +69,104 @@
         ]
       }
     },
-    "p1IssueCandidates": {
-      "url": "https://api.github.com/search/issues?q=repo%3Aopenclaw%2Fopenclaw%20is%3Aissue%20is%3Aopen%20documentation%20sort%3Aupdated-desc&per_page=10",
-      "status": 200,
+    "p1_pr_78884": {
+      "id": "p1_pr_78884",
+      "type": "github_pr",
+      "tier": "hot",
       "ok": true,
-      "checkedAt": "2026-05-07T08:48:35.810Z",
+      "status": 200,
+      "elapsed_ms": 381,
+      "checkedAt": "2026-05-07T10:11:14.632Z",
+      "data": {
+        "number": 78884,
+        "title": "docs: document local avatar file size limit",
+        "html_url": "https://github.com/openclaw/openclaw/pull/78884",
+        "state": "open",
+        "draft": false,
+        "merged": false,
+        "mergeable_state": "unstable",
+        "head_sha": "47738603ee23c3361e1354738e981e6b223ef18d",
+        "updated_at": "2026-05-07T09:36:52Z",
+        "labels": [
+          "docs",
+          "gateway",
+          "size: XS",
+          "proof: supplied",
+          "proof: sufficient"
+        ]
+      }
+    },
+    "p1_docs_issue_search": {
+      "id": "p1_docs_issue_search",
+      "type": "github_issue_search",
+      "tier": "hot",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 588,
+      "checkedAt": "2026-05-07T10:11:14.632Z",
       "data": [
+        {
+          "number": 9443,
+          "title": "Request: Prebuilt Android APK releases",
+          "html_url": "https://github.com/openclaw/openclaw/issues/9443",
+          "state": "open",
+          "updated_at": "2026-05-07T10:05:47Z",
+          "labels": [
+            "enhancement"
+          ]
+        },
+        {
+          "number": 78846,
+          "title": "[Bug]: [object Object][object Object]... in agents messages and in memory with mistral thinking",
+          "html_url": "https://github.com/openclaw/openclaw/issues/78846",
+          "state": "open",
+          "updated_at": "2026-05-07T09:29:20Z",
+          "labels": [
+            "bug",
+            "bug:behavior"
+          ]
+        },
+        {
+          "number": 78879,
+          "title": "[Feature]: Doctor & docs should warn when sandbox / fs.workspaceOnly / sessions_send config is silently no-op with CLI runtimes (claude-cli in my case)",
+          "html_url": "https://github.com/openclaw/openclaw/issues/78879",
+          "state": "open",
+          "updated_at": "2026-05-07T09:23:52Z",
+          "labels": [
+            "enhancement"
+          ]
+        },
+        {
+          "number": 9658,
+          "title": "Feature Request: Support streaming or file-based tool arguments to bypass JSON serialization limits",
+          "html_url": "https://github.com/openclaw/openclaw/issues/9658",
+          "state": "open",
+          "updated_at": "2026-05-07T09:16:58Z",
+          "labels": [
+            "enhancement"
+          ]
+        },
+        {
+          "number": 78593,
+          "title": "[Bug]: WhatsApp channel unavailable after upgrade to 2026.5.5 until @openclaw/whatsapp is manually installed #1",
+          "html_url": "https://github.com/openclaw/openclaw/issues/78593",
+          "state": "open",
+          "updated_at": "2026-05-07T09:12:56Z",
+          "labels": [
+            "bug",
+            "bug:behavior"
+          ]
+        },
+        {
+          "number": 8285,
+          "title": "Feature request: Auto-send intent/acknowledgment text message before agent processing",
+          "html_url": "https://github.com/openclaw/openclaw/issues/8285",
+          "state": "open",
+          "updated_at": "2026-05-07T08:53:00Z",
+          "labels": [
+            "enhancement"
+          ]
+        },
         {
           "number": 78811,
           "title": "RFC: stable embeddable core entry point (@openclaw/core)",
@@ -248,17 +174,6 @@
           "state": "open",
           "updated_at": "2026-05-07T08:24:55Z",
           "labels": []
-        },
-        {
-          "number": 78846,
-          "title": "[Bug]: [object Object][object Object]... in agents messages and in memory with mistral thinking",
-          "html_url": "https://github.com/openclaw/openclaw/issues/78846",
-          "state": "open",
-          "updated_at": "2026-05-07T08:06:36Z",
-          "labels": [
-            "bug",
-            "bug:behavior"
-          ]
         },
         {
           "number": 78843,
@@ -290,245 +205,389 @@
           "labels": [
             "enhancement"
           ]
-        },
-        {
-          "number": 7669,
-          "title": "[Feature] Re-enable dev channel distribution tag for npm releases",
-          "html_url": "https://github.com/openclaw/openclaw/issues/7669",
-          "state": "open",
-          "updated_at": "2026-05-07T05:38:34Z",
-          "labels": [
-            "enhancement"
-          ]
-        },
-        {
-          "number": 76952,
-          "title": "Docs/Feature Request: Explain Realtime Talk voices, voice-agent role, and mobile/phone bridge options",
-          "html_url": "https://github.com/openclaw/openclaw/issues/76952",
-          "state": "open",
-          "updated_at": "2026-05-07T04:00:59Z",
-          "labels": []
-        },
-        {
-          "number": 7433,
-          "title": "Improve WhatsApp/Baileys group message reliability",
-          "html_url": "https://github.com/openclaw/openclaw/issues/7433",
-          "state": "open",
-          "updated_at": "2026-05-07T03:51:44Z",
-          "labels": [
-            "enhancement"
-          ]
-        },
-        {
-          "number": 78723,
-          "title": "[Bug]: Device-token auth bypasses session ownership for outgoing media downloads",
-          "html_url": "https://github.com/openclaw/openclaw/issues/78723",
-          "state": "open",
-          "updated_at": "2026-05-07T02:32:21Z",
-          "labels": [
-            "bug",
-            "bug:behavior"
-          ]
-        },
-        {
-          "number": 6966,
-          "title": "Dynamic Model Switching Based on API Rate Limits",
-          "html_url": "https://github.com/openclaw/openclaw/issues/6966",
-          "state": "open",
-          "updated_at": "2026-05-07T02:32:10Z",
-          "labels": [
-            "enhancement"
-          ]
         }
       ]
     },
-    "aiDevtoolHedge": {
-      "checkedAt": "2026-05-07T08:48:35.810Z",
+    "npm_downloads_openclaw": {
+      "id": "npm_downloads_openclaw",
+      "type": "npm_downloads",
+      "tier": "hot",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 780,
+      "checkedAt": "2026-05-07T10:11:14.632Z",
+      "data": {
+        "downloads": 1067019,
+        "start": "2026-04-30",
+        "end": "2026-05-06",
+        "package": "openclaw"
+      }
+    },
+    "npm_search_openclaw": {
+      "id": "npm_search_openclaw",
+      "type": "npm_search",
+      "tier": "hot",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 1111,
+      "checkedAt": "2026-05-07T10:11:14.632Z",
       "data": [
         {
-          "name": "ai",
-          "latestVersion": "6.0.175",
-          "latestPublishedAt": "2026-05-04T17:24:36.726Z",
-          "description": "AI SDK by Vercel - build apps like ChatGPT, Claude, Gemini, and more with a single interface for any model using the Vercel AI Gateway or go direct to OpenAI, Anthropic, Google, or any other model provider.",
-          "license": "Apache-2.0",
-          "homepage": "https://ai-sdk.dev/docs",
-          "repository": "git+https://github.com/vercel/ai.git",
-          "npm": "https://www.npmjs.com/package/ai",
-          "weeklyDownloads": 11926851,
-          "downloadsWindow": "2026-04-30 to 2026-05-06",
-          "status": {
-            "metadata": 200,
-            "downloads": 200,
-            "ok": true
+          "name": "openclaw",
+          "version": "2026.5.6",
+          "date": "2026-05-06T17:33:28.172Z",
+          "links": {
+            "homepage": "https://github.com/openclaw/openclaw#readme",
+            "repository": "git+https://github.com/openclaw/openclaw.git",
+            "bugs": "https://github.com/openclaw/openclaw/issues",
+            "npm": "https://www.npmjs.com/package/openclaw"
+          },
+          "score": {
+            "final": 1762.0153,
+            "detail": {
+              "popularity": 1,
+              "quality": 1,
+              "maintenance": 1
+            }
           }
         },
         {
-          "name": "@ai-sdk/openai",
-          "latestVersion": "3.0.62",
-          "latestPublishedAt": "2026-05-06T17:15:47.976Z",
-          "description": "The **[OpenAI provider](https://ai-sdk.dev/providers/ai-sdk-providers/openai)** for the [AI SDK](https://ai-sdk.dev/docs) contains language model support for the OpenAI chat and completion APIs and embedding model support for the OpenAI embeddings API.",
-          "license": "Apache-2.0",
-          "homepage": "https://ai-sdk.dev/docs",
-          "repository": "git+https://github.com/vercel/ai.git",
-          "npm": "https://www.npmjs.com/package/%40ai-sdk%2Fopenai",
-          "weeklyDownloads": 5792713,
-          "downloadsWindow": "2026-04-30 to 2026-05-06",
-          "status": {
-            "metadata": 200,
-            "downloads": 200,
-            "ok": true
+          "name": "@tencent-weixin/openclaw-weixin",
+          "version": "2.4.2",
+          "date": "2026-05-07T09:17:58.399Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/@tencent-weixin/openclaw-weixin"
+          },
+          "score": {
+            "final": 361.75305,
+            "detail": {
+              "popularity": 1,
+              "quality": 1,
+              "maintenance": 1
+            }
           }
         },
         {
-          "name": "openai",
-          "latestVersion": "6.36.0",
-          "latestPublishedAt": "2026-05-04T17:36:28.121Z",
-          "description": "The official TypeScript library for the OpenAI API",
-          "license": "Apache-2.0",
-          "homepage": "https://github.com/openai/openai-node#readme",
-          "repository": "git+https://github.com/openai/openai-node.git",
-          "npm": "https://www.npmjs.com/package/openai",
-          "weeklyDownloads": 20467023,
-          "downloadsWindow": "2026-04-30 to 2026-05-06",
-          "status": {
-            "metadata": 200,
-            "downloads": 200,
-            "ok": true
+          "name": "@paperclipai/adapter-openclaw-gateway",
+          "version": "2026.428.0",
+          "date": "2026-04-28T22:54:24.929Z",
+          "links": {
+            "homepage": "https://github.com/paperclipai/paperclip",
+            "repository": "git+https://github.com/paperclipai/paperclip.git",
+            "bugs": "https://github.com/paperclipai/paperclip/issues",
+            "npm": "https://www.npmjs.com/package/@paperclipai/adapter-openclaw-gateway"
+          },
+          "score": {
+            "final": 322.32156,
+            "detail": {
+              "popularity": 1,
+              "quality": 1,
+              "maintenance": 1
+            }
           }
         },
         {
-          "name": "@anthropic-ai/sdk",
-          "latestVersion": "0.95.0",
-          "latestPublishedAt": "2026-05-06T15:09:44.211Z",
-          "description": "The official TypeScript library for the Anthropic API",
-          "license": "MIT",
-          "repository": "https://github.com/anthropics/anthropic-sdk-typescript.git",
-          "npm": "https://www.npmjs.com/package/%40anthropic-ai%2Fsdk",
-          "weeklyDownloads": 17930476,
-          "downloadsWindow": "2026-04-29 to 2026-05-05",
-          "status": {
-            "metadata": 200,
-            "downloads": 200,
-            "ok": true
+          "name": "@larksuite/openclaw-lark",
+          "version": "2026.4.10",
+          "date": "2026-04-30T09:35:12.325Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/@larksuite/openclaw-lark"
+          },
+          "score": {
+            "final": 320.27905,
+            "detail": {
+              "popularity": 1,
+              "quality": 1,
+              "maintenance": 1
+            }
           }
         },
         {
-          "name": "@modelcontextprotocol/sdk",
-          "latestVersion": "1.29.0",
-          "latestPublishedAt": "2026-03-30T16:50:42.718Z",
-          "description": "Model Context Protocol implementation for TypeScript",
-          "license": "MIT",
-          "homepage": "https://modelcontextprotocol.io",
-          "repository": "git+https://github.com/modelcontextprotocol/typescript-sdk.git",
-          "npm": "https://www.npmjs.com/package/%40modelcontextprotocol%2Fsdk",
-          "weeklyDownloads": 34021288,
-          "downloadsWindow": "2026-04-30 to 2026-05-06",
-          "status": {
-            "metadata": 200,
-            "downloads": 200,
-            "ok": true
+          "name": "@ollama/openclaw-web-search",
+          "version": "0.2.2",
+          "date": "2026-03-17T19:11:18.204Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/@ollama/openclaw-web-search"
+          },
+          "score": {
+            "final": 319.01874,
+            "detail": {
+              "popularity": 1,
+              "quality": 1,
+              "maintenance": 1
+            }
+          }
+        },
+        {
+          "name": "@tencent-weixin/openclaw-weixin-cli",
+          "version": "2.1.3",
+          "date": "2026-05-04T11:01:36.967Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/@tencent-weixin/openclaw-weixin-cli"
+          },
+          "score": {
+            "final": 286.49362,
+            "detail": {
+              "popularity": 1,
+              "quality": 1,
+              "maintenance": 1
+            }
+          }
+        },
+        {
+          "name": "@tloncorp/tlon-skill",
+          "version": "0.3.5",
+          "date": "2026-04-10T17:06:43.292Z",
+          "links": {
+            "homepage": "https://github.com/tloncorp/tlon-skill#readme",
+            "repository": "git+https://github.com/tloncorp/tlon-skill.git",
+            "bugs": "https://github.com/tloncorp/tlon-skill/issues",
+            "npm": "https://www.npmjs.com/package/@tloncorp/tlon-skill"
+          },
+          "score": {
+            "final": 284.93906,
+            "detail": {
+              "popularity": 1,
+              "quality": 1,
+              "maintenance": 1
+            }
+          }
+        },
+        {
+          "name": "openclaw-stepfun",
+          "version": "0.2.24",
+          "date": "2026-04-30T08:49:45.696Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/openclaw-stepfun"
+          },
+          "score": {
+            "final": 262.86392,
+            "detail": {
+              "popularity": 1,
+              "quality": 1,
+              "maintenance": 1
+            }
+          }
+        },
+        {
+          "name": "@openclaw/brave-plugin",
+          "version": "2026.5.6",
+          "date": "2026-05-06T17:23:56.190Z",
+          "links": {
+            "homepage": "https://github.com/openclaw/openclaw#readme",
+            "repository": "git+https://github.com/openclaw/openclaw.git",
+            "bugs": "https://github.com/openclaw/openclaw/issues",
+            "npm": "https://www.npmjs.com/package/@openclaw/brave-plugin"
+          },
+          "score": {
+            "final": 260.8404,
+            "detail": {
+              "popularity": 1,
+              "quality": 1,
+              "maintenance": 1
+            }
+          }
+        },
+        {
+          "name": "@wecom/wecom-openclaw-cli",
+          "version": "1.1.0",
+          "date": "2026-05-07T09:41:06.887Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/@wecom/wecom-openclaw-cli"
+          },
+          "score": {
+            "final": 260.31244,
+            "detail": {
+              "popularity": 1,
+              "quality": 1,
+              "maintenance": 1
+            }
           }
         }
       ]
     },
-    "pypiAiDevtoolHedge": {
-      "checkedAt": "2026-05-07T08:48:35.810Z",
-      "data": [
-        {
-          "name": "langchain",
-          "latestVersion": "1.2.17",
-          "latestPublishedAt": "2026-04-30T20:25:34.626317Z",
-          "summary": "Building applications with LLMs through composability",
-          "license": "MIT",
-          "homepage": null,
-          "projectUrls": {
-            "Changelog": "https://github.com/langchain-ai/langchain/releases?q=tag%3A%22langchain%3D%3D1%22",
-            "Documentation": "https://reference.langchain.com/python/langchain/langchain/",
-            "Homepage": "https://docs.langchain.com/",
-            "Issues": "https://github.com/langchain-ai/langchain/issues",
-            "Reddit": "https://www.reddit.com/r/LangChain/",
-            "Repository": "https://github.com/langchain-ai/langchain",
-            "Slack": "https://www.langchain.com/join-community",
-            "Twitter": "https://x.com/langchain_oss"
-          },
-          "pypi": "https://pypi.org/project/langchain/",
-          "status": {
-            "metadata": 200,
-            "ok": true
-          }
+    "npm_pkg_ai": {
+      "id": "npm_pkg_ai",
+      "type": "npm_package",
+      "tier": "hot",
+      "ok": true,
+      "status": "metadata=200;downloads=200",
+      "elapsed_ms": 1944,
+      "checkedAt": "2026-05-07T10:11:14.632Z",
+      "data": {
+        "name": "ai",
+        "latestVersion": "6.0.175",
+        "latestPublishedAt": "2026-05-04T17:24:36.726Z",
+        "description": "AI SDK by Vercel - build apps like ChatGPT, Claude, Gemini, and more with a single interface for any model using the Vercel AI Gateway or go direct to OpenAI, Anthropic, Google, or any other model provider.",
+        "license": "Apache-2.0",
+        "homepage": "https://ai-sdk.dev/docs",
+        "repository": "git+https://github.com/vercel/ai.git",
+        "npm": "https://www.npmjs.com/package/ai",
+        "weeklyDownloads": 11926851,
+        "downloadsWindow": "2026-04-30 to 2026-05-06"
+      }
+    },
+    "npm_pkg_ai_sdk_openai": {
+      "id": "npm_pkg_ai_sdk_openai",
+      "type": "npm_package",
+      "tier": "hot",
+      "ok": true,
+      "status": "metadata=200;downloads=200",
+      "elapsed_ms": 1141,
+      "checkedAt": "2026-05-07T10:11:14.632Z",
+      "data": {
+        "name": "@ai-sdk/openai",
+        "latestVersion": "3.0.62",
+        "latestPublishedAt": "2026-05-06T17:15:47.976Z",
+        "description": "The **[OpenAI provider](https://ai-sdk.dev/providers/ai-sdk-providers/openai)** for the [AI SDK](https://ai-sdk.dev/docs) contains language model support for the OpenAI chat and completion APIs and embedding model support for the OpenAI embeddings API.",
+        "license": "Apache-2.0",
+        "homepage": "https://ai-sdk.dev/docs",
+        "repository": "git+https://github.com/vercel/ai.git",
+        "npm": "https://www.npmjs.com/package/%40ai-sdk%2Fopenai",
+        "weeklyDownloads": 5792713,
+        "downloadsWindow": "2026-04-30 to 2026-05-06"
+      }
+    },
+    "npm_pkg_openai": {
+      "id": "npm_pkg_openai",
+      "type": "npm_package",
+      "tier": "hot",
+      "ok": true,
+      "status": "metadata=200;downloads=200",
+      "elapsed_ms": 1706,
+      "checkedAt": "2026-05-07T10:11:14.632Z",
+      "data": {
+        "name": "openai",
+        "latestVersion": "6.36.0",
+        "latestPublishedAt": "2026-05-04T17:36:28.121Z",
+        "description": "The official TypeScript library for the OpenAI API",
+        "license": "Apache-2.0",
+        "homepage": "https://github.com/openai/openai-node#readme",
+        "repository": "git+https://github.com/openai/openai-node.git",
+        "npm": "https://www.npmjs.com/package/openai",
+        "weeklyDownloads": 20467023,
+        "downloadsWindow": "2026-04-30 to 2026-05-06"
+      }
+    },
+    "npm_pkg_anthropic_sdk": {
+      "id": "npm_pkg_anthropic_sdk",
+      "type": "npm_package",
+      "tier": "hot",
+      "ok": true,
+      "status": "metadata=200;downloads=200",
+      "elapsed_ms": 1407,
+      "checkedAt": "2026-05-07T10:11:14.632Z",
+      "data": {
+        "name": "@anthropic-ai/sdk",
+        "latestVersion": "0.95.0",
+        "latestPublishedAt": "2026-05-06T15:09:44.211Z",
+        "description": "The official TypeScript library for the Anthropic API",
+        "license": "MIT",
+        "repository": "https://github.com/anthropics/anthropic-sdk-typescript.git",
+        "npm": "https://www.npmjs.com/package/%40anthropic-ai%2Fsdk",
+        "weeklyDownloads": 17872960,
+        "downloadsWindow": "2026-04-30 to 2026-05-06"
+      }
+    },
+    "pypi_pkg_openai": {
+      "id": "pypi_pkg_openai",
+      "type": "pypi_package",
+      "tier": "hot",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 490,
+      "checkedAt": "2026-05-07T10:11:14.632Z",
+      "data": {
+        "name": "openai",
+        "latestVersion": "2.35.1",
+        "latestPublishedAt": "2026-05-06T21:38:12.866531Z",
+        "summary": "The official Python library for the openai API",
+        "license": "Apache-2.0",
+        "homepage": null,
+        "projectUrls": {
+          "Homepage": "https://github.com/openai/openai-python",
+          "Repository": "https://github.com/openai/openai-python"
         },
-        {
-          "name": "llama-index",
-          "latestVersion": "0.14.21",
-          "latestPublishedAt": "2026-04-21T00:18:48.060132Z",
-          "summary": "Interface between LLMs and your data",
-          "license": null,
-          "homepage": null,
-          "projectUrls": {
-            "Documentation": "https://docs.llamaindex.ai/en/stable/",
-            "Homepage": "https://llamaindex.ai",
-            "Repository": "https://github.com/run-llama/llama_index"
-          },
-          "pypi": "https://pypi.org/project/llama-index/",
-          "status": {
-            "metadata": 200,
-            "ok": true
-          }
+        "pypi": "https://pypi.org/project/openai/"
+      }
+    },
+    "pypi_pkg_anthropic": {
+      "id": "pypi_pkg_anthropic",
+      "type": "pypi_package",
+      "tier": "hot",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 448,
+      "checkedAt": "2026-05-07T10:11:14.632Z",
+      "data": {
+        "name": "anthropic",
+        "latestVersion": "0.100.0",
+        "latestPublishedAt": "2026-05-06T15:07:13.578142Z",
+        "summary": "The official Python library for the anthropic API",
+        "license": "MIT",
+        "homepage": null,
+        "projectUrls": {
+          "Homepage": "https://github.com/anthropics/anthropic-sdk-python",
+          "Repository": "https://github.com/anthropics/anthropic-sdk-python"
         },
-        {
-          "name": "litellm",
-          "latestVersion": "1.83.14",
-          "latestPublishedAt": "2026-04-26T03:16:10.176009Z",
-          "summary": "Library to easily interface with LLM API providers",
-          "license": null,
-          "homepage": null,
-          "projectUrls": {
-            "Documentation": "https://docs.litellm.ai",
-            "Homepage": "https://litellm.ai",
-            "Repository": "https://github.com/BerriAI/litellm"
-          },
-          "pypi": "https://pypi.org/project/litellm/",
-          "status": {
-            "metadata": 200,
-            "ok": true
-          }
-        },
-        {
-          "name": "anthropic",
-          "latestVersion": "0.100.0",
-          "latestPublishedAt": "2026-05-06T15:07:13.578142Z",
-          "summary": "The official Python library for the anthropic API",
-          "license": "MIT",
-          "homepage": null,
-          "projectUrls": {
-            "Homepage": "https://github.com/anthropics/anthropic-sdk-python",
-            "Repository": "https://github.com/anthropics/anthropic-sdk-python"
-          },
-          "pypi": "https://pypi.org/project/anthropic/",
-          "status": {
-            "metadata": 200,
-            "ok": true
-          }
-        },
-        {
-          "name": "openai",
-          "latestVersion": "2.35.1",
-          "latestPublishedAt": "2026-05-06T21:38:12.866531Z",
-          "summary": "The official Python library for the openai API",
-          "license": "Apache-2.0",
-          "homepage": null,
-          "projectUrls": {
-            "Homepage": "https://github.com/openai/openai-python",
-            "Repository": "https://github.com/openai/openai-python"
-          },
-          "pypi": "https://pypi.org/project/openai/",
-          "status": {
-            "metadata": 200,
-            "ok": true
-          }
-        }
-      ]
+        "pypi": "https://pypi.org/project/anthropic/"
+      }
+    },
+    "npm_pkg_mcp_sdk": {
+      "id": "npm_pkg_mcp_sdk",
+      "type": "npm_package",
+      "tier": "warm",
+      "ok": true,
+      "status": "skipped",
+      "elapsed_ms": 0,
+      "checkedAt": null,
+      "data": null
+    },
+    "pypi_pkg_langchain": {
+      "id": "pypi_pkg_langchain",
+      "type": "pypi_package",
+      "tier": "warm",
+      "ok": true,
+      "status": "skipped",
+      "elapsed_ms": 0,
+      "checkedAt": null,
+      "data": null
+    },
+    "pypi_pkg_llama_index": {
+      "id": "pypi_pkg_llama_index",
+      "type": "pypi_package",
+      "tier": "warm",
+      "ok": true,
+      "status": "skipped",
+      "elapsed_ms": 0,
+      "checkedAt": null,
+      "data": null
+    },
+    "pypi_pkg_litellm": {
+      "id": "pypi_pkg_litellm",
+      "type": "pypi_package",
+      "tier": "warm",
+      "ok": true,
+      "status": "skipped",
+      "elapsed_ms": 0,
+      "checkedAt": null,
+      "data": null
+    },
+    "openclaw_docs_policy": {
+      "id": "openclaw_docs_policy",
+      "type": "policy_only",
+      "tier": "cold",
+      "ok": true,
+      "status": "skipped",
+      "elapsed_ms": 0,
+      "checkedAt": null,
+      "data": null
     }
   },
-  "warnings": []
+  "warnings": [],
+  "material_delta": {
+    "is_material": false,
+    "reasons": [],
+    "signature": "{\"warnings\":[],\"activePrs\":[{\"number\":77710,\"state\":\"open\",\"merged\":false,\"head_sha\":\"893e25f76e285c74b37a79cac2b579aa6936bc90\",\"updated_at\":\"2026-05-07T01:39:48Z\",\"labels\":[\"docs\",\"size: XS\"]},{\"number\":78884,\"state\":\"open\",\"merged\":false,\"head_sha\":\"47738603ee23c3361e1354738e981e6b223ef18d\",\"updated_at\":\"2026-05-07T09:36:52Z\",\"labels\":[\"docs\",\"gateway\",\"size: XS\",\"proof: supplied\",\"proof: sufficient\"]}],\"packages\":[{\"id\":\"npm_pkg_ai\",\"name\":\"ai\",\"latestVersion\":\"6.0.175\",\"latestPublishedAt\":\"2026-05-04T17:24:36.726Z\"},{\"id\":\"npm_pkg_ai_sdk_openai\",\"name\":\"@ai-sdk/openai\",\"latestVersion\":\"3.0.62\",\"latestPublishedAt\":\"2026-05-06T17:15:47.976Z\"},{\"id\":\"npm_pkg_openai\",\"name\":\"openai\",\"latestVersion\":\"6.36.0\",\"latestPublishedAt\":\"2026-05-04T17:36:28.121Z\"},{\"id\":\"npm_pkg_anthropic_sdk\",\"name\":\"@anthropic-ai/sdk\",\"latestVersion\":\"0.95.0\",\"latestPublishedAt\":\"2026-05-06T15:09:44.211Z\"},{\"id\":\"pypi_pkg_openai\",\"name\":\"openai\",\"latestVersion\":\"2.35.1\",\"latestPublishedAt\":\"2026-05-06T21:38:12.866531Z\"},{\"id\":\"pypi_pkg_anthropic\",\"name\":\"anthropic\",\"latestVersion\":\"0.100.0\",\"latestPublishedAt\":\"2026-05-06T15:07:13.578142Z\"}],\"sourceFailures\":[]}"
+  }
 }

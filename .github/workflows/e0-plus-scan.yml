@@ -3,7 +3,7 @@ name: E0+ Signal Scan
 on:
   workflow_dispatch:
   schedule:
-    - cron: "17 */6 * * *"
+    - cron: "17 */4 * * *"
 
 permissions:
   contents: read
@@ -34,15 +34,19 @@ jobs:
           npm run check
           npm run scan
 
-      - name: Commit scan output
+      - name: Commit material scan output
         run: |
           git config user.name "wangjieweb3-design"
           git config user.email "wangjieweb3@gmail.com"
+          if [ ! -f data/material-delta.flag ]; then
+            echo "No material scan delta; ledger/report changes are intentionally not committed."
+            exit 0
+          fi
+          rm -f data/material-delta.flag
           git add data reports
           if git diff --cached --quiet; then
             echo "No scan output changes."
           else
-            git commit -m "chore: update signal report [skip ci]"
+            git commit -m "chore: update material signal report [skip ci]"
             git push origin "HEAD:${GITHUB_REF_NAME}"
           fi
-

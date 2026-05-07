@@ -1,26 +1,217 @@
+version: v2.5.1
+source_pool_max: 50
+hot_min: 10
+hot_max: 15
+warm_min: 15
+warm_max: 20
+cold_reserve_max: 35
+material_delta_policy: signal_signature_only
 sources:
-  github_public_api:
-    official_url: https://docs.github.com/en/rest
+  github_openclaw_repo:
+    type: github_repo
+    tier: hot
+    url: https://api.github.com/repos/openclaw/openclaw
+    official_url: https://docs.github.com/en/rest/repos/repos#get-a-repository
     collection: metadata_and_source_links_only
     redistribution: no_full_issue_readme_or_document_mirroring
-    stage_a_action: candidate_reports_only_no_auto_public_mutation
-  npm_public_registry:
-    official_url: https://github.com/npm/registry/blob/main/docs/REGISTRY-API.md
-    collection: package_metadata_and_download_counts_only
+    stage_a_action: repo_signal_only
+    last_success:
+    p95_runtime_ms:
+    warning_count: 0
+    backoff_state: active
+  p1_pr_77710:
+    type: github_pr
+    tier: hot
+    repo: openclaw/openclaw
+    number: 77710
+    official_url: https://docs.github.com/en/rest/pulls/pulls#get-a-pull-request
+    collection: pr_metadata_only
+    redistribution: no_full_thread_mirroring
+    stage_a_action: p1_active_pr_signal
+    last_success:
+    p95_runtime_ms:
+    warning_count: 0
+    backoff_state: active
+  p1_pr_78884:
+    type: github_pr
+    tier: hot
+    repo: openclaw/openclaw
+    number: 78884
+    official_url: https://docs.github.com/en/rest/pulls/pulls#get-a-pull-request
+    collection: pr_metadata_only
+    redistribution: no_full_thread_mirroring
+    stage_a_action: p1_active_pr_signal
+    last_success:
+    p95_runtime_ms:
+    warning_count: 0
+    backoff_state: active
+  p1_docs_issue_search:
+    type: github_issue_search
+    tier: hot
+    query: repo:openclaw/openclaw is:issue is:open documentation sort:updated-desc
+    per_page: 10
+    official_url: https://docs.github.com/en/rest/search/search#search-issues-and-pull-requests
+    collection: issue_metadata_only
+    redistribution: no_full_issue_mirroring
+    stage_a_action: p1b_candidate_queue_signal
+    last_success:
+    p95_runtime_ms:
+    warning_count: 0
+    backoff_state: active
+  npm_downloads_openclaw:
+    type: npm_downloads
+    tier: hot
+    package: openclaw
+    period: last-week
+    official_url: https://github.com/npm/registry/blob/main/docs/download-counts.md
+    collection: package_download_counts_only
     redistribution: no_tarball_or_bulk_registry_mirroring
-    stage_a_action: freshness_signal_only
-  npm_ai_devtool_hedge:
+    stage_a_action: package_adoption_signal
+    last_success:
+    p95_runtime_ms:
+    warning_count: 0
+    backoff_state: active
+  npm_search_openclaw:
+    type: npm_search
+    tier: hot
+    text: openclaw
+    size: 10
+    official_url: https://github.com/npm/registry/blob/main/docs/REGISTRY-API.md
+    collection: package_metadata_only
+    redistribution: no_tarball_or_readme_mirroring
+    stage_a_action: ecosystem_package_signal
+    last_success:
+    p95_runtime_ms:
+    warning_count: 0
+    backoff_state: active
+  npm_pkg_ai:
+    type: npm_package
+    tier: hot
+    package: ai
     official_url: https://github.com/npm/registry/blob/main/docs/REGISTRY-API.md
     collection: package_metadata_versions_timestamps_download_counts_only
     redistribution: no_tarball_readme_or_bulk_registry_mirroring
     stage_a_action: outside_openclaw_hedge_signal_only
-  pypi_ai_devtool_hedge:
+    last_success:
+    p95_runtime_ms:
+    warning_count: 0
+    backoff_state: active
+  npm_pkg_ai_sdk_openai:
+    type: npm_package
+    tier: hot
+    package: @ai-sdk/openai
+    official_url: https://github.com/npm/registry/blob/main/docs/REGISTRY-API.md
+    collection: package_metadata_versions_timestamps_download_counts_only
+    redistribution: no_tarball_readme_or_bulk_registry_mirroring
+    stage_a_action: outside_openclaw_hedge_signal_only
+    last_success:
+    p95_runtime_ms:
+    warning_count: 0
+    backoff_state: active
+  npm_pkg_openai:
+    type: npm_package
+    tier: hot
+    package: openai
+    official_url: https://github.com/npm/registry/blob/main/docs/REGISTRY-API.md
+    collection: package_metadata_versions_timestamps_download_counts_only
+    redistribution: no_tarball_readme_or_bulk_registry_mirroring
+    stage_a_action: outside_openclaw_hedge_signal_only
+    last_success:
+    p95_runtime_ms:
+    warning_count: 0
+    backoff_state: active
+  npm_pkg_anthropic_sdk:
+    type: npm_package
+    tier: hot
+    package: @anthropic-ai/sdk
+    official_url: https://github.com/npm/registry/blob/main/docs/REGISTRY-API.md
+    collection: package_metadata_versions_timestamps_download_counts_only
+    redistribution: no_tarball_readme_or_bulk_registry_mirroring
+    stage_a_action: outside_openclaw_hedge_signal_only
+    last_success:
+    p95_runtime_ms:
+    warning_count: 0
+    backoff_state: active
+  pypi_pkg_openai:
+    type: pypi_package
+    tier: hot
+    package: openai
     official_url: https://docs.pypi.org/api/json/
     collection: package_metadata_versions_timestamps_only
     redistribution: no_tarball_readme_release_file_or_bulk_registry_mirroring
     stage_a_action: outside_openclaw_hedge_signal_only
-  openclaw_docs:
+    last_success:
+    p95_runtime_ms:
+    warning_count: 0
+    backoff_state: active
+  pypi_pkg_anthropic:
+    type: pypi_package
+    tier: hot
+    package: anthropic
+    official_url: https://docs.pypi.org/api/json/
+    collection: package_metadata_versions_timestamps_only
+    redistribution: no_tarball_readme_release_file_or_bulk_registry_mirroring
+    stage_a_action: outside_openclaw_hedge_signal_only
+    last_success:
+    p95_runtime_ms:
+    warning_count: 0
+    backoff_state: active
+  npm_pkg_mcp_sdk:
+    type: npm_package
+    tier: warm
+    package: @modelcontextprotocol/sdk
+    official_url: https://github.com/npm/registry/blob/main/docs/REGISTRY-API.md
+    collection: package_metadata_versions_timestamps_download_counts_only
+    redistribution: no_tarball_readme_or_bulk_registry_mirroring
+    stage_a_action: outside_openclaw_hedge_signal_only
+    last_success:
+    p95_runtime_ms:
+    warning_count: 0
+    backoff_state: active
+  pypi_pkg_langchain:
+    type: pypi_package
+    tier: warm
+    package: langchain
+    official_url: https://docs.pypi.org/api/json/
+    collection: package_metadata_versions_timestamps_only
+    redistribution: no_tarball_readme_release_file_or_bulk_registry_mirroring
+    stage_a_action: outside_openclaw_hedge_signal_only
+    last_success:
+    p95_runtime_ms:
+    warning_count: 0
+    backoff_state: active
+  pypi_pkg_llama_index:
+    type: pypi_package
+    tier: warm
+    package: llama-index
+    official_url: https://docs.pypi.org/api/json/
+    collection: package_metadata_versions_timestamps_only
+    redistribution: no_tarball_readme_release_file_or_bulk_registry_mirroring
+    stage_a_action: outside_openclaw_hedge_signal_only
+    last_success:
+    p95_runtime_ms:
+    warning_count: 0
+    backoff_state: active
+  pypi_pkg_litellm:
+    type: pypi_package
+    tier: warm
+    package: litellm
+    official_url: https://docs.pypi.org/api/json/
+    collection: package_metadata_versions_timestamps_only
+    redistribution: no_tarball_readme_release_file_or_bulk_registry_mirroring
+    stage_a_action: outside_openclaw_hedge_signal_only
+    last_success:
+    p95_runtime_ms:
+    warning_count: 0
+    backoff_state: active
+  openclaw_docs_policy:
+    type: policy_only
+    tier: cold
     official_url: https://docs.openclaw.ai/tools/clawhub
     collection: canonical_links_and_policy_summary_only
     redistribution: no_full_doc_mirroring
     stage_a_action: policy_gate_only
+    last_success:
+    p95_runtime_ms:
+    warning_count: 0
+    backoff_state: manual_review_only

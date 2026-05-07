@@ -5,10 +5,10 @@
   "type": "module",
   "scripts": {
     "scan": "node scripts/e0-plus-scan.mjs",
-    "check": "node --check scripts/e0-plus-scan.mjs"
+    "queue:check": "node scripts/p1b-queue.mjs",
+    "check": "node --check scripts/e0-plus-scan.mjs && node --check scripts/p1b-queue.mjs"
   },
   "engines": {
     "node": ">=20"
   }
 }
-
