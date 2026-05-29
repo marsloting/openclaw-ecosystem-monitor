@@ -12,4 +12,4 @@ They must not automatically:
 - publish hosted listings or distribution pages,
 - send payment or donation links.
 
-Any public action requires a separate Codex execution step with the exploration persona boundary checked first.
+Any public action requires a separate execution step with the exploration persona boundary checked first.

@@ -9,4 +9,4 @@ GitHub Actions controls:
 - Weekly cron plus manual dispatch only.
 - Do not commit generated scan output.
 - Do not backfill routine no-op runs.
-- Keep public mutation behind Codex review.
+- Keep public mutation behind explicit review.

@@ -8,7 +8,7 @@ async function fetchJson(url) {
   const response = await fetch(url, {
     headers: {
       accept: "application/vnd.github+json",
-      "user-agent": "wangjieweb3-design-openclaw-weekly-monitor"
+      "user-agent": "marsloting-openclaw-ecosystem-monitor"
     }
   });
 
@@ -111,7 +111,7 @@ async function main() {
   console.log("## Boundaries");
   console.log("- Read-only public metadata scan.");
   console.log("- No comments, PRs, issues, stars, hosted listings, secrets, KYC, or payment surfaces.");
-  console.log("- PA-facing state belongs in Notion earn-money portfolio databases.");
+  console.log("- Private portfolio state stays outside this public repository.");
 
   if (failures.length > 0) {
     console.error("");

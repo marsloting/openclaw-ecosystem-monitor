@@ -1,13 +1,13 @@
-# OpenClaw Weekly Monitor
+# OpenClaw Ecosystem Monitor
 
-Private v3.0 runtime for the `wangjieweb3-design` public builder persona.
+Public, read-only runtime for the `marsloting` builder persona.
 
 Purpose:
 
-- keep a weekly public-metadata pulse on OpenClaw exploration #1,
-- print a source-linked Actions report for Codex review,
+- keep a weekly public-metadata pulse on OpenClaw ecosystem activity,
+- print a source-linked Actions report for review,
 - avoid automatic public posting or repository mutation,
-- leave PA-facing portfolio state in Notion instead of private repo files.
+- keep private portfolio notes outside this repository.
 
 Rules:
 
@@ -21,6 +21,4 @@ Rules:
 Runtime:
 
 - GitHub Actions runs weekly and reads only public OpenClaw metadata.
-- Codex heartbeat runs daily and writes portfolio state to Notion.
-- Exploration #1 is `OpenClaw ecosystem flywheel`, duration 6 months, spend cap USD 5.
-- This repo intentionally has no private JSON ledger, source tier registry, PR holding list, or generated-output commit loop.
+- This repository intentionally has no private JSON ledger, source tier registry, PR holding list, generated-output commit loop, payment surface, or hosted API.
