@@ -1,0 +1,44 @@
+name: Installed user signal
+description: Share an install result, source request, or blocked use case.
+title: "[signal] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this if you installed or evaluated the OpenClaw Ecosystem Monitor and want to report what happened next.
+  - type: dropdown
+    id: signal_type
+    attributes:
+      label: Signal type
+      options:
+        - Installed and ran it
+        - Install blocked
+        - Source request
+        - Report request
+        - Trust or data-policy question
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: What did you try?
+      description: Describe the public-safe version of the install or evaluation path.
+      placeholder: I installed from ClawHub and wanted to monitor X, but Y was unclear.
+    validations:
+      required: true
+  - type: textarea
+    id: desired_output
+    attributes:
+      label: What output would be useful?
+      description: Name the report, source, or signal that would make this useful for you.
+      placeholder: A weekly summary of package freshness, a source-quality warning, a stale-docs report, etc.
+    validations:
+      required: false
+  - type: checkboxes
+    id: public_safe
+    attributes:
+      label: Public-safety check
+      options:
+        - label: I removed secrets, private tokens, private workspace names, private customer data, and private emails.
+          required: true
