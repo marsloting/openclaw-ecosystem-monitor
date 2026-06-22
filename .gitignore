@@ -7,3 +7,4 @@ data/*
 
 reports/*
 !reports/.gitkeep
+!reports/sanitized-demo-report.md

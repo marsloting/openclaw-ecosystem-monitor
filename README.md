@@ -41,3 +41,5 @@ Use this repo as the feedback surface. The useful signals are:
 Open an [installed-user signal](https://github.com/marsloting/openclaw-ecosystem-monitor/issues/new?template=installed-user-signal.yml) with the shortest public-safe version.
 
 Do not include secrets, private workspace names, private customer data, private emails, or private logs.
+
+Before filing feedback, you can inspect the report shape in the [sanitized demo report](reports/sanitized-demo-report.md). It shows what the monitor keeps, what it links back to, and what it refuses to store.
